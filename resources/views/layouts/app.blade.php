@@ -26,7 +26,10 @@
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 @auth
-                    <a class="nav-link" href="{{ route('productos.index') }}">Productos</a>
+                    <a class="nav-link" href="{{ route('productos.index') }}">Productos&nbsp;&nbsp;&nbsp;    </a>
+                @endauth
+                @auth
+                    <a class="nav-link" href="{{ route('postres.index') }}">Postres</a>
                 @endauth
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

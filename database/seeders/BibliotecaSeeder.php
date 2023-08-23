@@ -7,14 +7,14 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 
-class ProductosSeeder extends Seeder
+class BibliotecaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('productos')->insert([
+        DB::table('biblioteca')->insert([
             [
                 'nombre' => 'Producto 1',
                 'precio' => 19.99,

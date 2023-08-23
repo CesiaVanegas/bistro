@@ -4,7 +4,7 @@
     <div class="container">
         <h1 class="mb-3">Agregar Producto</h1>
 
-        <form action="{{ route('productos.store') }}" method="POST">
+        <form action="{{ route('postres.store') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
