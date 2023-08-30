@@ -9,5 +9,5 @@ class Postres extends Model
 {
     use HasFactory;
     protected $table ='postres';
-    protected $fillable = ['nombre', 'precio', 'descripcion'];
+    protected $fillable = ['nombre', 'precio', 'descripcion','imagen'];
 }

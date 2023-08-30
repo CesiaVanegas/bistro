@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Postres;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PostresController extends Controller
 {
@@ -34,6 +35,7 @@ class PostresController extends Controller
             'nombre' => 'required',
             'precio' => 'required',
             'descripcion' => 'required',
+            'imagen' => 'required',
         ]);
 
         $postres = new Postres([
@@ -42,6 +44,12 @@ class PostresController extends Controller
             'descripcion' => $request->input('descripcion'),
         ]);
 
+        if ($request->hasFile('imagen')) {
+            // Subir el nuevo archivo de imagen
+            $file = $request->file('imagen');
+            $path = $file->store('public/postres');
+            $postres->imagen = $path;
+        }
         $postres->save();
         return redirect()->route('postres.index')
             ->with('success', 'Postres agregado exitosamente');
@@ -76,6 +84,20 @@ class PostresController extends Controller
         ]);
 
         $postres = Postres::find($id);
+        if ($request->hasFile('imagen')) {
+            // Eliminar el archivo de imagen existente si existe
+            Storage::delete('public/postres/' . $postres->imagen);
+
+            $file = $request->file('imagen');
+
+            // Guardar el nombre original del archivo
+            $fileName = $file->getClientOriginalName();
+
+            // Subir el archivo de imagen con su nombre original
+            $path = $file->storeAs('public/postres', $fileName);
+
+            $postres->imagen = $fileName;
+        }
 
         if (!$postres) {
             return redirect()->route('postres.index')
