@@ -17,6 +17,7 @@ return new class extends Migration
             $table->decimal('precio', 10, 2);
             $table->string('imagen',255);
             $table->text('descripcion');
+            $table->enum('estado', ['Activo', 'Inactivo']);
             $table->timestamps();
         });
     }

@@ -17,7 +17,26 @@
     <link rel="stylesheet" href="{{ url('css/all.css') }}">
     <link rel="stylesheet" href="{{ asset('webfonts/fa-solid-900.woff2') }}">
 
+    <style>
+        .zoom img {
+            transition: transform 0.3s;
+        }
 
+        /* Zoom en dispositivos más grandes */
+        @media (min-width: 768px) {
+            .zoom:hover img {
+                transform: scale(4.5);
+            }
+        }
+
+        /* Zoom en dispositivos móviles */
+        @media (max-width: 767px) {
+            .zoom:hover img {
+                transform: scale(2.5);
+                /* Ajusta el valor según tus preferencias */
+            }
+        }
+    </style>
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <script src="{{ url('js/all.js') }}"></script>
@@ -31,11 +50,14 @@
                 <a class="navbar-brand text-white" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-                @auth
+                {{-- @auth
                     <a class="nav-link text-white" href="{{ route('productos.index') }}">Productos&nbsp;&nbsp;&nbsp; </a>
+                @endauth --}}
+                @auth
+                    <a class="nav-link text-white" href="{{ route('postres.index') }}">Postres&nbsp;&nbsp;&nbsp;</a>
                 @endauth
                 @auth
-                    <a class="nav-link text-white" href="{{ route('postres.index') }}">Postres</a>
+                    <a class="nav-link text-white" href="{{ route('biblioteca.index') }}">Libros</a>
                 @endauth
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

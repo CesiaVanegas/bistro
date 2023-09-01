@@ -28,6 +28,17 @@
                 @endif
             </div>
             <div class="form-group mb-3">
+                <label for="estado">Estado:</label>
+                <select class="form-select" name="estado" aria-label="Selccione">
+                    <option value="" selected disabled>Seleccione una opción</option>
+                    <option value="Activo" {{ old('estado') == 'Activo' ? 'selected' : '' }}>Activo</option>
+                    <option value="Inactivo" {{ old('estado') == 'Inactivo' ? 'selected' : '' }}>Inactivo</option>
+                </select>
+                @if ($errors->has('estado'))
+                    <span class="text-danger">{{ $errors->first('estado') }}</span>
+                @endif
+            </div>
+            <div class="form-group mb-3">
                 <label for="imagen">Imagen:</label>
                 <input type="file" name="imagen" class="form-control">
                 @if ($errors->has('imagen'))

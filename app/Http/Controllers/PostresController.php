@@ -36,19 +36,29 @@ class PostresController extends Controller
             'precio' => 'required',
             'descripcion' => 'required',
             'imagen' => 'required',
+            'estado' => 'required'
         ]);
 
         $postres = new Postres([
             'nombre' => $request->input('nombre'),
             'precio' => $request->input('precio'),
             'descripcion' => $request->input('descripcion'),
+            'estado' => $request->input('estado'),
         ]);
 
         if ($request->hasFile('imagen')) {
             // Subir el nuevo archivo de imagen
             $file = $request->file('imagen');
-            $path = $file->store('public/postres');
-            $postres->imagen = $path;
+            // Guardar el nombre original del archivo
+            $fileName = $file->getClientOriginalName();
+            // Subir el archivo de imagen con su nombre original
+            $path = $file->storeAs('public/postres', $fileName);
+
+            $postres->imagen = $fileName;
+
+            // $file = $request->file('imagen');
+            // $path = $file->store('public/postres');
+            // $postres->imagen = $path;
         }
         $postres->save();
         return redirect()->route('postres.index')

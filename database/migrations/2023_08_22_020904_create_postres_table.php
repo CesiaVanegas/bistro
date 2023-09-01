@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('imagen',255);
             $table->text('descripcion');
             $table->enum('estado', ['Activo', 'Inactivo']);
-            $table->enum('tipo', ['Bebidas', 'Postres','Libros']);
             $table->timestamps();
         });
     }
