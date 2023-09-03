@@ -41,6 +41,9 @@
         <link rel="stylesheet" href="{{ asset('vendor/glightbox/css/glightbox.min.css') }}">
         <link rel="stylesheet" href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}">
 
+        <!-- Fuentes-icon CSS Files -->
+        <link rel="stylesheet" href="{{ asset('fonts/css/all.min.css') }}">
+
         <!-- Template Main CSS File -->
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <!-- =======================================================
@@ -59,19 +62,19 @@
         <div class="container d-flex justify-content-between">
 
             <div class="logo">
-                <h1><a href="index.html">Maxim</a></h1>
+                <h1><a href="index.html">Le Café des mots</a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                    <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Acerca de</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Productos</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+                    {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
                             <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
@@ -88,8 +91,8 @@
                             <li><a href="#">Drop Down 3</a></li>
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
-                    </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    </li> --}}
+                    <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -100,45 +103,57 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="container text-center text-md-left" data-aos="fade-up">
-            <h1>Welcome to Maxim</h1>
-            <h2>We are team of talented designers making websites with Bootstrap</h2>
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <h1 class="fuente-titulos">Bienvenidos a le café des mots</h1>
+            <h2 class="fuente-titulos">"Donde el sabor nace de un libro y se convierte en un postre"</h2>
+            <a href="#about" class="btn-get-started scrollto">Iniciar</a>
         </div>
     </section><!-- End Hero -->
 
     <main id="main">
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <section id="about" class="about section-bg">
             <div class="container">
 
                 <div class="row">
                     <div class="col-xl-6 col-lg-7" data-aos="fade-right">
-                        <img src="assets/img/about-img.jpg" class="img-fluid" alt="">
+                        <img src="{{ asset('img/logo_bistro.png') }}" class="img-fluid" alt="">
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                            <i class='bx bx-coffee'></i>
+                            <h4 class="fuente-titulos-s">Visión</h4>
+                            <p>Nuestra visión es convertirnos en un lugar emblemático y reconocido en la comunidad
+                                amante de la repostería y la cultura. Aspiramos a ser un punto de encuentro donde la
+                                gente pueda disfrutar de los placeres simples de la vida: desde un postre recién
+                                horneado y una taza de café, hasta la emoción de descubrir un nuevo mundo a través de
+                                las páginas de un libro.
+
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
-                        <h3 data-aos="fade-up">Voluptatem dignissimos provident</h3>
+                    <div class="col-xl-6 col-lg-5 pt-5 pt-lg-1">
+                        <h3 data-aos="fade-up" class="fuente-titulos-s">Acerca de nosotros</h3>
                         <p data-aos="fade-up">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                            “Le café des mots” en español El café de las palabras. Ofrecemos un lugar para disfrutar de
+                            deliciosos postres tradicionales franceses y bebidas, y a su vez, un espacio para poder leer
+                            y adquirir nuevos conocimientos a través del inmenso mundo de la literatura, con la
+                            colección especial de libros expuestos en nuestra biblioteca.
                         </p>
-                        <div class="icon-box" data-aos="fade-up">
+                        {{-- <div class="icon-box" data-aos="fade-up">
                             <i class="bx bx-receipt"></i>
                             <h4>Corporis voluptates sit</h4>
                             <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                        </div>
+                        </div> --}}
 
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                            <i class="bx bx-cube-alt"></i>
-                            <h4>Ullamco laboris nisi</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                            <i class='bx bx-coffee'></i>
+                            <h4 class="fuente-titulos-s">Misión</h4>
+                            <p>Nuestra misión es deleitar los sentidos y enriquecer las mentes al ofrecer una
+                                experiencia única, que combina la exquisitez de la repostería francesa,con el placer de
+                                la lectura. Valoramos la excelencia en la calidad de nuestros productos, el servicio
+                                atento y la promoción de la cultura francesa gastronómica y literaria.</p>
                         </div>
 
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                            <i class="bx bx-cube-alt"></i>
-                            <h4>Ullamco laboris nisi</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                        </div>
+
 
                     </div>
                 </div>
@@ -147,7 +162,7 @@
         </section><!-- End About Section -->
 
         <!-- ======= Steps Section ======= -->
-        <section id="steps" class="steps section-bg">
+        {{-- <section id="steps" class="steps section-bg">
             <div class="container">
 
                 <div class="row no-gutters">
@@ -197,7 +212,8 @@
                 </div>
 
             </div>
-        </section><!-- End Steps Section -->
+        </section> --}}
+        <!-- End Steps Section -->
 
         <!-- ======= Features Section ======= -->
         <section id="features" class="features">
@@ -236,22 +252,22 @@
                         <div class="tab-content">
                             <div class="tab-pane active show" id="tab-1">
                                 <figure>
-                                    <img src="assets/img/features-1.png" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/features-1.png') }}" alt="" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="tab-pane" id="tab-2">
                                 <figure>
-                                    <img src="assets/img/features-2.png" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/features-2.png') }}" alt="" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="tab-pane" id="tab-3">
                                 <figure>
-                                    <img src="assets/img/features-3.png" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/features-3.png') }}" alt="" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="tab-pane" id="tab-4">
                                 <figure>
-                                    <img src="assets/img/features-4.png" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/features-4.png') }}" alt="" class="img-fluid">
                                 </figure>
                             </div>
                         </div>
@@ -356,7 +372,7 @@
                                     legam anim culpa.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
-                                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
+                                <img src="{{ asset('img/testimonials/testimonials-2.jpg') }}" class="testimonial-img"
                                     alt="">
                                 <h3>Sara Wilsson</h3>
                                 <h4>Designer</h4>
@@ -372,7 +388,7 @@
                                     minim.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
-                                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
+                                <img src="{{ asset('img/testimonials/testimonials-3.jpg') }}" class="testimonial-img"
                                     alt="">
                                 <h3>Jena Karlis</h3>
                                 <h4>Store Owner</h4>
@@ -388,7 +404,7 @@
                                     dolore labore illum veniam.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
-                                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
+                                <img src="{{ asset('img/testimonials/testimonials-4.jpg') }}" class="testimonial-img"
                                     alt="">
                                 <h3>Matt Brandon</h3>
                                 <h4>Freelancer</h4>
@@ -404,7 +420,7 @@
                                     culpa fore nisi cillum quid.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
-                                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
+                                <img src="{{ asset('img/testimonials/testimonials-5.jpg') }}" class="testimonial-img"
                                     alt="">
                                 <h3>John Larson</h3>
                                 <h4>Entrepreneur</h4>
@@ -444,13 +460,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/portfolio/portfolio-1.jpg') }}" class="img-fluid"
+                                alt="">
                             <div class="portfolio-info">
                                 <h4>App 1</h4>
                                 <p>App</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                    <a href="{{ asset('img/portfolio/portfolio-1.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i
+                                            class="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" title="More Details"><i
                                             class="bx bx-link"></i></a>
                                 </div>
@@ -460,13 +478,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/portfolio/portfolio-2.jpg') }}" class="img-fluid"
+                                alt="">
                             <div class="portfolio-info">
                                 <h4>Web 3</h4>
                                 <p>Web</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                    <a href="{{ asset('img/portfolio/portfolio-2.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i
+                                            class="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" title="More Details"><i
                                             class="bx bx-link"></i></a>
                                 </div>
@@ -476,13 +496,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/portfolio/portfolio-3.jpg') }}" class="img-fluid"
+                                alt="">
                             <div class="portfolio-info">
                                 <h4>App 2</h4>
                                 <p>App</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                    <a href="{{ asset('img/portfolio/portfolio-3.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i
+                                            class="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" title="More Details"><i
                                             class="bx bx-link"></i></a>
                                 </div>
@@ -492,13 +514,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/portfolio/portfolio-4.jpg') }}" class="img-fluid"
+                                alt="">
                             <div class="portfolio-info">
                                 <h4>Card 2</h4>
                                 <p>Card</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                    <a href="{{ asset('img/portfolio/portfolio-4.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i
+                                            class="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" title="More Details"><i
                                             class="bx bx-link"></i></a>
                                 </div>
@@ -508,13 +532,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/portfolio/portfolio-5.jpg') }}" class="img-fluid"
+                                alt="">
                             <div class="portfolio-info">
                                 <h4>Web 2</h4>
                                 <p>Web</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                    <a href="{{ asset('img/portfolio/portfolio-5.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
+                                            class="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" title="More Details"><i
                                             class="bx bx-link"></i></a>
                                 </div>
@@ -524,13 +550,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/portfolio/portfolio-6.jpg') }}" class="img-fluid"
+                                alt="">
                             <div class="portfolio-info">
                                 <h4>App 3</h4>
                                 <p>App</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                                    <a href="{{ asset('img/portfolio/portfolio-6.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i
+                                            class="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" title="More Details"><i
                                             class="bx bx-link"></i></a>
                                 </div>
@@ -540,13 +568,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/portfolio/portfolio-7.jpg') }}" class="img-fluid"
+                                alt="">
                             <div class="portfolio-info">
                                 <h4>Card 1</h4>
                                 <p>Card</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                                    <a href="{{ asset('img/portfolio/portfolio-7.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i
+                                            class="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" title="More Details"><i
                                             class="bx bx-link"></i></a>
                                 </div>
@@ -556,13 +586,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/portfolio/portfolio-8.jpg') }}" class="img-fluid"
+                                alt="">
                             <div class="portfolio-info">
                                 <h4>Card 3</h4>
                                 <p>Card</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                    <a href="{{ asset('img/portfolio/portfolio-8.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i
+                                            class="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" title="More Details"><i
                                             class="bx bx-link"></i></a>
                                 </div>
@@ -572,13 +604,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/portfolio/portfolio-9.jpg') }}" class="img-fluid"
+                                alt="">
                             <div class="portfolio-info">
                                 <h4>Web 3</h4>
                                 <p>Web</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                    <a href="{{ asset('img/portfolio/portfolio-9.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i
+                                            class="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" title="More Details"><i
                                             class="bx bx-link"></i></a>
                                 </div>
@@ -606,7 +640,7 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
                         <div class="member">
-                            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/team-1.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Walter White</h4>
@@ -624,7 +658,7 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="member">
-                            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/team-2.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Sarah Jhonson</h4>
@@ -642,7 +676,7 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="member">
-                            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/team-3.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>William Anderson</h4>
@@ -660,7 +694,7 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="member">
-                            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/team-4.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Amanda Jepson</h4>
@@ -938,6 +972,9 @@
     <script src="{{ url('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
     <script src="{{ url('vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ url('vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Fuentes-icon CSS Files -->
+    <script src="{{ url('fonts/js/all.min.js') }}"></script>
 
     <!-- Template Main JS File -->
     <script src="{{ url('js/main.js') }}"></script>

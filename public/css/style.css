@@ -82,7 +82,14 @@ h6 {
   height: 70px;
   transition: all 0.5s;
   z-index: 997;
-  background: #000;
+  background: #56443a;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../webfonts/Merriweather-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 
 #header .logo h1 {
@@ -98,6 +105,7 @@ h6 {
 #header .logo h1 a,
 #header .logo h1 a:hover {
   color: #fff;
+  font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
 }
 
@@ -166,7 +174,7 @@ h6 {
   height: 2px;
   bottom: 3px;
   left: 0;
-  background-color: #1bac91;
+  background-color: #f7f7f7;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -372,7 +380,7 @@ h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("../img/hero-bg.jpg") center center;
+  background: url("../img/portada.jpg") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
@@ -422,8 +430,8 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  border-color: #1bac91;
-  background: #1bac91;
+  border-color: #56443a;
+  background: #56443a;
 }
 
 @media (min-width: 1024px) {
@@ -461,8 +469,8 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f9f8;
-}
+  background-color: #fdf5f0;
+}.
 
 .section-title {
   padding-bottom: 40px;
@@ -549,7 +557,7 @@ section {
 .about h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #21413c;
+  color: #56443a;
 }
 
 .about .icon-box {
@@ -559,19 +567,29 @@ section {
 .about .icon-box i {
   font-size: 48px;
   float: left;
-  color: #1bac91;
+  color: #56443a;
+}
+
+.about .fas {
+  margin-top: 154px;
+}
+
+.about .fas i {
+  font-size: 48px;
+  float: left;
+  color: #56443a;
 }
 
 .about .icon-box h4 {
   font-size: 22px;
   font-weight: 500;
   margin-left: 60px;
-  color: #21413c;
+  color: #56443a;
 }
 
 .about .icon-box p {
-  font-size: 15px;
-  color: #848484;
+  font-size: 16px;
+  color: #2c2b2b;
   margin-left: 60px;
 }
 
@@ -1512,3 +1530,14 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.fuente-titulos{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.fuente-titulos-s{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+
