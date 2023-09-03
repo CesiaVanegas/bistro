@@ -16,13 +16,13 @@
                 @endif
             </div>
 
-            <div class="form-group mb-3">
+            {{-- <div class="form-group mb-3">
                 <label for="precio">Precio:</label>
                 <input type="text" name="precio" class="form-control" value="{{ $biblioteca->precio }}">
                 @if ($errors->has('precio'))
                     <span class="text-danger">{{ $errors->first('precio') }}</span>
                 @endif
-            </div>
+            </div> --}}
 
             <div class="form-group mb-3">
                 <label for="descripcion">Descripción:</label>

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Biblioteca;
+use App\Models\Libros;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -13,7 +13,7 @@ class BibliotecaController extends Controller
      */
     public function index()
     {
-        $data = Biblioteca::all();
+        $data = Libros::all();
 
         return view('biblioteca.index', compact('data'));
     }
@@ -33,15 +33,15 @@ class BibliotecaController extends Controller
     {
         $request->validate([
             'nombre' => 'required',
-            'precio' => 'required',
+            // 'precio' => 'required',
             'descripcion' => 'required',
             'imagen' => 'required',
             'estado' => 'required'
         ]);
 
-        $biblioteca = new Biblioteca([
+        $biblioteca = new Libros([
             'nombre' => $request->input('nombre'),
-            'precio' => $request->input('precio'),
+            // 'precio' => $request->input('precio'),
             'descripcion' => $request->input('descripcion'),
             'estado' => $request->input('estado'),
         ]);
@@ -74,7 +74,7 @@ class BibliotecaController extends Controller
      */
     public function edit(string $id)
     {
-        $biblioteca = Biblioteca::find($id);
+        $biblioteca = Libros::find($id);
         return view('biblioteca.edit', compact('biblioteca'));
     }
 
@@ -85,12 +85,12 @@ class BibliotecaController extends Controller
     {
         $request->validate([
             'nombre' => 'required',
-            'precio' => 'required|numeric',
+            // 'precio' => 'required|numeric',
             'descripcion' => 'required',
             'estado' => 'required',
         ]);
 
-        $biblioteca = Biblioteca::find($id);
+        $biblioteca = Libros::find($id);
         if ($request->hasFile('imagen')) {
             // Eliminar el archivo de imagen existente si existe
             Storage::delete('public/libros/' . $biblioteca->imagen);
@@ -126,7 +126,7 @@ class BibliotecaController extends Controller
      */
     public function destroy(string $id)
     {
-        $biblioteca = Biblioteca::find($id);
+        $biblioteca = Libros::find($id);
 
         if (!$biblioteca) {
             return redirect()->route('biblioteca.index')
