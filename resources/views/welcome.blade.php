@@ -281,10 +281,10 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
-                    <h2>Services</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                    <h2 class="fuente-titulos-s"><b>Servicios</b></h2>
+                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
                 <div class="row">
@@ -337,10 +337,10 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
-                    <h2>Testimonials</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                    <h2 class="fuente-titulos-s"><b>Reseñas</b></h2>                  
+                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -439,9 +439,9 @@
 
                 <div class="section-title" data-aos="fade-up">
                     <h2 class="fuente-titulos-s"><b>Productos</b></h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
                 <div class="row" data-aos="fade-up">
@@ -468,7 +468,7 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/libros/' . $libro->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ $libro->nombre }}"><i class="bx bx-plus"></i></a>
+                                            title="{{ $libro->nombre .' <br>'.$libro->descripcion }}"><i class="bx bx-plus"></i></a>
                                         <a href="portfolio-details.html" title="More Details"><i
                                                 class="bx bx-link"></i></a>
                                     </div>
@@ -488,7 +488,7 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/postres/' . $postre->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ $postre->nombre }}"><i class="bx bx-plus"></i></a>
+                                            title="{{ $postre->nombre .' <br>'.$postre->descripcion .' <br>'. '$ '.$postre->precio}}"><i class="bx bx-plus"></i></a>
                                         <a href="portfolio-details.html" title="More Details"><i
                                                 class="bx bx-link"></i></a>
                                     </div>
@@ -651,10 +651,10 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
-                    <h2>Team</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                    <h2 class="fuente-titulos-s"><b>Equipo de Trabajo</b></h2>
+                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
                 <div class="row">
@@ -741,10 +741,10 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
-                    <h2>F.A.Q</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                    <h2 class="fuente-titulos-s"><b>Preguntas frecuentes</b></h2>
+                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
                 <div class="faq-list">
@@ -833,10 +833,10 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
-                    <h2>Contact</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                    <h2 class="fuente-titulos-s"><b>Contacto</b></h2>
+                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
                 <div class="row no-gutters justify-content-center" data-aos="fade-up">
@@ -852,7 +852,7 @@
                             <div class="email mt-4">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>info@example.com</p>
+                                <p>lecafedesmots23@gmail.com</p>
                             </div>
 
                             <div class="phone mt-4">
@@ -879,26 +879,26 @@
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Name" required>
+                                        placeholder="Nombre" required>
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
                                     <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email" required>
+                                        placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject"
+                                <input type="text" class="form-control" name="subject" id="asunto"
                                     placeholder="Subject" required>
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button type="submit">Enviar</button></div>
                         </form>
                     </div>
 
@@ -917,7 +917,7 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
-                            <h3>Maxim</h3>
+                            <h3 class="fuente-titulos-s"><b>Le café des mots</b></h3>
                             <p>
                                 A108 Adam Street <br>
                                 NY 535022, USA<br><br>
