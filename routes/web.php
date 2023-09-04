@@ -12,10 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\InicioController::class, 'index'])->name('inicio');
 
 Auth::routes();
 
@@ -27,3 +24,5 @@ Route::resource('postres', App\Http\Controllers\PostresController::class);
 
 Route::resource('biblioteca', App\Http\Controllers\BibliotecaController::class);
 
+// retorno de imagenes de libros 
+Route::get('/libros_r', [App\Http\Controllers\BibliotecaController::class, 'LibrosRender'])->name('LibrosRender');

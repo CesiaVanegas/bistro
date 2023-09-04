@@ -46,6 +46,8 @@
 
         <!-- Template Main CSS File -->
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+
         <!-- =======================================================
           * Template Name: Maxim
           * Updated: Jul 27 2023 with Bootstrap v5.3.1
@@ -118,20 +120,9 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-7" data-aos="fade-right">
                         <img src="{{ asset('img/logo_bistro.png') }}" class="img-fluid" alt="">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                            <i class='bx bx-coffee'></i>
-                            <h4 class="fuente-titulos-s">Visión</h4>
-                            <p>Nuestra visión es convertirnos en un lugar emblemático y reconocido en la comunidad
-                                amante de la repostería y la cultura. Aspiramos a ser un punto de encuentro donde la
-                                gente pueda disfrutar de los placeres simples de la vida: desde un postre recién
-                                horneado y una taza de café, hasta la emoción de descubrir un nuevo mundo a través de
-                                las páginas de un libro.
-
-                            </p>
-                        </div>
                     </div>
                     <div class="col-xl-6 col-lg-5 pt-5 pt-lg-1">
-                        <h3 data-aos="fade-up" class="fuente-titulos-s">Acerca de nosotros</h3>
+                        <h3 data-aos="fade-up" class="fuente-titulos-s"><b>Acerca de nosotros</b></h3>
                         <p data-aos="fade-up">
                             “Le café des mots” en español El café de las palabras. Ofrecemos un lugar para disfrutar de
                             deliciosos postres tradicionales franceses y bebidas, y a su vez, un espacio para poder leer
@@ -143,17 +134,25 @@
                             <h4>Corporis voluptates sit</h4>
                             <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
                         </div> --}}
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                            <i class='bx bx-coffee'></i>
+                            <h4 class="fuente-titulos-s"><b>Visión</b></h4>
+                            <p>Nuestra visión es convertirnos en un lugar emblemático y reconocido en la comunidad
+                                amante de la repostería y la cultura. Aspiramos a ser un punto de encuentro donde la
+                                gente pueda disfrutar de los placeres simples de la vida: desde un postre recién
+                                horneado y una taza de café, hasta la emoción de descubrir un nuevo mundo a través de
+                                las páginas de un libro.
 
+                            </p>
+                        </div>
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                             <i class='bx bx-coffee'></i>
-                            <h4 class="fuente-titulos-s">Misión</h4>
+                            <h4 class="fuente-titulos-s"><b>Misión</b></h4>
                             <p>Nuestra misión es deleitar los sentidos y enriquecer las mentes al ofrecer una
                                 experiencia única, que combina la exquisitez de la repostería francesa,con el placer de
                                 la lectura. Valoramos la excelencia en la calidad de nuestros productos, el servicio
                                 atento y la promoción de la cultura francesa gastronómica y literaria.</p>
                         </div>
-
-
 
                     </div>
                 </div>
@@ -439,7 +438,7 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
-                    <h2>Portfolio</h2>
+                    <h2 class="fuente-titulos-s"><b>Productos</b></h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
                         ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
@@ -448,35 +447,57 @@
                 <div class="row" data-aos="fade-up">
                     <div class="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
-                            <li data-filter=".filter-web">Web</li>
+                            <li data-filter="*" class="filter-active">Todos</li>
+                            <li data-filter=".filter-app">Postres</li>
+                            <li data-filter=".filter-card">Bebidas</li>
+                            <li data-filter=".filter-web">Libros</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="row portfolio-container" data-aos="fade-up">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('img/portfolio/portfolio-1.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('img/portfolio/portfolio-1.jpg') }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
+                    @foreach ($libros as $libro)
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="{{ asset('storage/libros/' . $libro->imagen) }}" class="img-fluid"
+                                    alt="{{ $libro->nombre }}">
+                                <div class="portfolio-info">
+                                    <h4>{{ $libro->nombre }}</h4>
+                                    <p>Web</p>
+                                    <div class="portfolio-links">
+                                        <a href="{{ asset('storage/libros/' . $libro->imagen) }}"
+                                            data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                            title="{{ $libro->nombre }}"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    @foreach ($postres as $postre)
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src="{{ asset('storage/postres/' . $postre->imagen) }}" class="img-fluid"
+                                    alt="{{ $postre->nombre }}">
+                                <div class="portfolio-info">
+                                    <h4>{{ $postre->nombre }}</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="{{ asset('storage/postres/' . $postre->imagen) }}"
+                                            data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                            title="{{ $postre->nombre }}"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                    {{-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
                             <img src="{{ asset('img/portfolio/portfolio-2.jpg') }}" class="img-fluid"
                                 alt="">
@@ -494,7 +515,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
                             <img src="{{ asset('img/portfolio/portfolio-3.jpg') }}" class="img-fluid"
                                 alt="">
@@ -618,7 +639,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div>
 
@@ -965,6 +986,7 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
+
     <!-- Vendor JS Files -->
     <script src="{{ url('vendor/aos/aos.js') }}"></script>
     <script src="{{ url('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -978,6 +1000,43 @@
 
     <!-- Template Main JS File -->
     <script src="{{ url('js/main.js') }}"></script>
+    {{-- <script>
+        url = '{{ request()->path() }}'
+        $.ajax({
+            type: "GET", // Usa POST para enviar datos al servidor
+            url: url + 'libros_r',
+            dataType: "json", // Espera una respuesta JSON
+            success: function(response) {
+
+                // Recorre los datos JSON y crea los elementos HTML
+                $.each(response, function(index, libro) {
+                    var portfolioItem = `
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="{{ asset('storage/libros') }}/${libro.imagen}" class="img-fluid" alt="${libro.nombre}">
+                            <div class="portfolio-info">
+                                <h4>${libro.nombre}</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="{{ asset('storage/libros') }}/${libro.imagen}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${libro.nombre}"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+
+                    // Agrega el elemento generado al contenedor correspondiente
+                    $(".productos").append(portfolioItem);
+                });
+
+            },
+            error: function(error) {
+                // Si ocurre un error en la solicitud AJAX, puedes manejarlo aquí
+                console.error("Error en la solicitud AJAX:", error);
+            }
+        });
+    </script> --}}
 
 </body>
 
