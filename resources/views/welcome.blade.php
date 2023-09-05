@@ -146,7 +146,7 @@
                             </p>
                         </div>
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                            <i class='bx bx-coffee'></i>
+                            <i class='bx bx-book-open'></i>
                             <h4 class="fuente-titulos-s"><b>Misión</b></h4>
                             <p>Nuestra misión es deleitar los sentidos y enriquecer las mentes al ofrecer una
                                 experiencia única, que combina la exquisitez de la repostería francesa,con el placer de
@@ -346,7 +346,7 @@
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
+                        {{-- <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -360,7 +360,8 @@
                                 <h3>Saul Goodman</h3>
                                 <h4>Ceo &amp; Founder</h4>
                             </div>
-                        </div><!-- End testimonial item -->
+                        </div> --}}
+                        <!-- End testimonial item -->
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
@@ -489,6 +490,26 @@
                                         <a href="{{ asset('storage/postres/' . $postre->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
                                             title="{{ $postre->nombre .' <br>'.$postre->descripcion .' <br>'. '$ '.$postre->precio}}"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                    @foreach ($bebidas as $bebida)
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                            <div class="portfolio-wrap">
+                                <img src="{{ asset('storage/bebidas/' . $bebida->imagen) }}" class="img-fluid"
+                                    alt="{{ $bebida->nombre }}">
+                                <div class="portfolio-info">
+                                    <h4>{{ $bebida->nombre }}</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="{{ asset('storage/bebidas/' . $bebida->imagen) }}"
+                                            data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                            title="{{ $bebida->nombre .' <br>'.$bebida->descripcion .' <br>'. '$ '.$bebida->precio}}"><i class="bx bx-plus"></i></a>
                                         <a href="portfolio-details.html" title="More Details"><i
                                                 class="bx bx-link"></i></a>
                                     </div>

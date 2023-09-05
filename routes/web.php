@@ -24,5 +24,7 @@ Route::resource('postres', App\Http\Controllers\PostresController::class);
 
 Route::resource('biblioteca', App\Http\Controllers\BibliotecaController::class);
 
+Route::resource('bebidas', App\Http\Controllers\BeibidasController::class);
+
 // retorno de imagenes de libros 
 Route::get('/libros_r', [App\Http\Controllers\BibliotecaController::class, 'LibrosRender'])->name('LibrosRender');
