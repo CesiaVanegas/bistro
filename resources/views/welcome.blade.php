@@ -887,9 +887,12 @@
                     </div>
 
                     <div class="col-lg-5 d-flex align-items-stretch">
-                        <iframe style="border:0; width: 100%; height: 270px;"
+                        {{-- <iframe style="border:0; width: 100%; height: 270px;"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                            frameborder="0" allowfullscreen></iframe>
+                            frameborder="0" allowfullscreen></iframe> --}}
+                            <iframe style="border:0; width: 100%; height: 270px;"
+                            frameborder="0" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!4m8!4m7!1m0!1m5!1m1!1s0x8f63376f55044295:0xfa3b58222d0a192!2m2!1d-89.1465914!2d13.7156908">
+                            </iframe>
                     </div>
 
                 </div>

@@ -48,7 +48,7 @@ class BebidasSeeder extends Seeder
             [
                 'nombre' => 'Té negro',
                 'precio' => 2.00,
-                'imagen' => 'té_negro.jpg',
+                'imagen' => 'te_negro.jpg',
                 'tipo' => 'Calientes',
                 'estado' => 'Activo',
             ],
