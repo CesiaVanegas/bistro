@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Le Café des mots') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -36,6 +36,26 @@
                 /* Ajusta el valor según tus preferencias */
             }
         }
+
+        .bg-coffe {
+            --bs-bg-opacity: 1;
+            background-color: #56443a;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .navbar-nav .nav-item {
+                text-align: center;
+                display: block;
+            }
+
+            .navbar-nav .nav-item .nav-link {
+                text-align: center;
+            }
+        }
     </style>
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -45,20 +65,15 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-secondary shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-coffe shadow-sm">
             <div class="container">
                 <a class="navbar-brand text-white" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Le Café des mots') }}
                 </a>
                 {{-- @auth
                     <a class="nav-link text-white" href="{{ route('productos.index') }}">Productos&nbsp;&nbsp;&nbsp; </a>
                 @endauth --}}
-                @auth
-                    <a class="nav-link text-white" href="{{ route('postres.index') }}">Postres&nbsp;&nbsp;&nbsp;</a>
-                @endauth
-                @auth
-                    <a class="nav-link text-white" href="{{ route('biblioteca.index') }}">Libros</a>
-                @endauth
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -68,7 +83,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        @auth
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{ route('postres.index') }}">Postres</a>
+                            </li>
+                        @endauth
 
+                        <!-- Enlace para "Libros" -->
+                        @auth
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{ route('biblioteca.index') }}">Libros</a>
+                            </li>
+                        @endauth
+
+                          <!-- Enlace para "Bebidas" -->
+                          @auth
+                          <li class="nav-item">
+                              <a class="nav-link text-white" href="{{ route('bebidas.index') }}">Bebidas</a>
+                          </li>
+                      @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->

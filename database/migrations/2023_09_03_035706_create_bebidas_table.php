@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nombre', 255);
             $table->decimal('precio', 10, 2); // Permite valores nulos
             $table->string('imagen', 255);
+            $table->text('descripcion')->nullable();;    
             $table->enum('tipo', ['Frias', 'Calientes']);
             $table->enum('estado', ['Activo', 'Inactivo']);
             $table->timestamps();
