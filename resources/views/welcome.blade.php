@@ -866,20 +866,20 @@
                         <div class="info">
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
-                                <h4>Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <h4>Ubicación:</h4>
+                                <p>Plaza venecia soyapango</p>
                             </div>
 
                             <div class="email mt-4">
                                 <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
+                                <h4>Correo:</h4>
                                 <p>lecafedesmots23@gmail.com</p>
                             </div>
 
                             <div class="phone mt-4">
                                 <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
-                                <p>+1 5589 55488 55s</p>
+                                <h4>Teléfono:</h4>
+                                <p>+503 7962-2449</p>
                             </div>
 
                         </div>
@@ -909,7 +909,7 @@
                             </div>
                             <div class="form-group mt-3">
                                 <input type="text" class="form-control" name="subject" id="asunto"
-                                    placeholder="Subject" required>
+                                    placeholder="Título" required>
                             </div>
                             <div class="form-group mt-3">
                                 <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
