@@ -9,5 +9,11 @@ class Contactos extends Model
 {
     use HasFactory;
     protected $table = 'contactos';
-    protected $fillable = ['tipo', 'descripcion', 'url','estado'];
+    protected $fillable = ['tipo', 'descripcion', 'url', 'estado'];
+    protected $with = ['notificaciones'];
+
+    public function notificaciones()
+    {
+        return $this->hasMany(Notificaciones::class, 'contacto_id');
+    }
 }

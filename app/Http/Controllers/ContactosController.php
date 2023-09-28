@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contactos;
+use App\Models\Notificaciones;
 use Illuminate\Http\Request;
 
 class ContactosController extends Controller
@@ -13,6 +14,7 @@ class ContactosController extends Controller
     public function index()
     {
         $data = Contactos::all(); 
+        $data2 = Notificaciones::all(); 
         return view('contactos.index',compact('data'));
     }
 

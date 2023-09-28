@@ -10,4 +10,9 @@ class Notificaciones extends Model
     use HasFactory;
     protected $table = 'notificaciones';
     protected $fillable = ['tipo', 'descripcion', 'url','estado'];
+
+    public function contacto()
+    {
+        return $this->belongsTo(Contacto::class, 'contacto_id');
+    }
 }
