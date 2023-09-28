@@ -10,7 +10,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-   
+
     <!-- Styles -->
     <!DOCTYPE html>
     <html lang="en">
@@ -64,7 +64,7 @@
         <div class="container d-flex justify-content-between">
 
             <div class="logo">
-                <h1><a href="{{url('/')}}">Le Café des mots</a></h1>
+                <h1><a href="{{ url('/') }}">Le Café des mots</a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
@@ -318,7 +318,7 @@
                         <div class="icon-box icon-box-green">
                             <div class="icon">
                                 {{-- <i class="bx bx-tachometer"></i> --}}
-                                <i class="bi bi-book"></i>  
+                                <i class="bi bi-book"></i>
                             </div>
                             <h4 class="title"><a href="">Magni Dolores</a></h4>
                             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -349,7 +349,7 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
-                    <h2 class="fuente-titulos-s"><b>Reseñas</b></h2>                  
+                    <h2 class="fuente-titulos-s"><b>Reseñas</b></h2>
                     {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
                         ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
@@ -481,7 +481,8 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/libros/' . $libro->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ $libro->nombre .' <br>'.$libro->descripcion }}"><i class="bx bx-plus"></i></a>
+                                            title="{{ $libro->nombre . ' <br>' . $libro->descripcion }}"><i
+                                                class="bx bx-plus"></i></a>
                                         <a href="portfolio-details.html" title="More Details"><i
                                                 class="bx bx-link"></i></a>
                                     </div>
@@ -501,7 +502,8 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/postres/' . $postre->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ $postre->nombre .' <br>'.$postre->descripcion .' <br>'. '$ '.$postre->precio}}"><i class="bx bx-plus"></i></a>
+                                            title="{{ $postre->nombre . ' <br>' . $postre->descripcion . ' <br>' . '$ ' . $postre->precio }}"><i
+                                                class="bx bx-plus"></i></a>
                                         <a href="portfolio-details.html" title="More Details"><i
                                                 class="bx bx-link"></i></a>
                                     </div>
@@ -521,7 +523,8 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/bebidas/' . $bebida->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ $bebida->nombre .' <br>'.$bebida->descripcion .' <br>'. '$ '.$bebida->precio}}"><i class="bx bx-plus"></i></a>
+                                            title="{{ $bebida->nombre . ' <br>' . $bebida->descripcion . ' <br>' . '$ ' . $bebida->precio }}"><i
+                                                class="bx bx-plus"></i></a>
                                         <a href="portfolio-details.html" title="More Details"><i
                                                 class="bx bx-link"></i></a>
                                     </div>
@@ -805,58 +808,65 @@
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                                 <p>
-                                sí, existe servicio a domicilio en nuestro local con Uber eats y Pedidos ya.
+                                    sí, existe servicio a domicilio en nuestro local con Uber eats y Pedidos ya.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-2" class="collapsed">¿Qué tipos de libros tienen disponibles? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-2" class="collapsed">¿Qué tipos de libros tienen
+                                disponibles? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                Tenemos libros para todos los gustos, ofrecemos libros infantiles, libros históricos, novela narrativa, 
-                                novelas de ficción y de no ficción, libros juveniles, entre otros.
+                                    Tenemos libros para todos los gustos, ofrecemos libros infantiles, libros
+                                    históricos, novela narrativa,
+                                    novelas de ficción y de no ficción, libros juveniles, entre otros.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="200">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-3" class="collapsed">¿Tiene algún costo extra acceder a la biblioteca? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-3" class="collapsed">¿Tiene algún costo extra acceder a la
+                                biblioteca? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                No, al consumir cualquiera de nuestros productos tienes total acceso a nuestra biblioteca, 
-                                ya que impulsamos y motivamos el hábito de leer al ofrecer los libros de manera gratuita mientras se encuentren dentro del local.
+                                    No, al consumir cualquiera de nuestros productos tienes total acceso a nuestra
+                                    biblioteca,
+                                    ya que impulsamos y motivamos el hábito de leer al ofrecer los libros de manera
+                                    gratuita mientras se encuentren dentro del local.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="300">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-4" class="collapsed">¿Horarios de atención? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-4" class="collapsed">¿Horarios de atención? <i
+                                    class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                De lunes a sábados 8.00 am a 8.00 pm <br>
-                                Domingo 7.00 am a 12.00 pm
+                                    De lunes a sábados 8.00 am a 8.00 pm <br>
+                                    Domingo 7.00 am a 12.00 pm
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="400">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">¿cuál se el  tipo de comida ofrece su local? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-5" class="collapsed">¿cuál se el tipo de comida ofrece su
+                                local? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                El tipo de comida que ofrece nuestro local son postres tradicionales de Francia, 
-                                y contamos con diferentes tipos de postres como lo son: Marcarons, 
-                                crême brule y crepas dulces, entre otros. Todo esto con el fin de que nuestro visitante 
-                                conozcan nuevos sabores de un país diferente.
+                                    El tipo de comida que ofrece nuestro local son postres tradicionales de Francia,
+                                    y contamos con diferentes tipos de postres como lo son: Marcarons,
+                                    crême brule y crepas dulces, entre otros. Todo esto con el fin de que nuestro
+                                    visitante
+                                    conozcan nuevos sabores de un país diferente.
                                 </p>
                             </div>
                         </li>
@@ -908,29 +918,41 @@
                         {{-- <iframe style="border:0; width: 100%; height: 270px;"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
                             frameborder="0" allowfullscreen></iframe> --}}
-                            <iframe style="border:0; width: 100%; height: 270px;" frameborder="0" allowfullscreen src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=plaza venecia soyapango&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <iframe style="border:0; width: 100%; height: 270px;" frameborder="0" allowfullscreen
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=plaza venecia soyapango&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     </div>
                 </div>
 
                 <div class="row mt-5 justify-content-center" data-aos="fade-up">
                     <div class="col-lg-10">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="{{ route('contacto.store') }}" method="POST" role="form"
+                            class="php-email-form">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Nombre" required>
+                                    <input type="text" name="nombre" class="form-control" id="nombre"
+                                        placeholder="Nombre" >
+                                    @if ($errors->has('nombre'))
+                                        <span class="text-danger">{{ $errors->first('nombre') }}</span>
+                                    @endif
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
                                     <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Email" required>
+                                        placeholder="Email" >
+                                    @if ($errors->has('email'))
+                                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="asunto"
-                                    placeholder="Título" required>
+                                <input type="text" class="form-control" name="titulo" id="titulo"
+                                    placeholder="Título" >
+                                @if ($errors->has('titulo'))
+                                    <span class="text-danger">{{ $errors->first('titulo') }}</span>
+                                @endif
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" ></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>
@@ -939,6 +961,7 @@
                             </div>
                             <div class="text-center"><button type="submit">Enviar</button></div>
                         </form>
+
                     </div>
 
                 </div>

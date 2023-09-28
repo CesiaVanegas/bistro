@@ -26,7 +26,29 @@
       thisForm.querySelector('.sent-message').classList.remove('d-block');
 
       let formData = new FormData( thisForm );
+      // Validar el campo 'nombre'
+      let nombre = formData.get('nombre');
+      if (!nombre) {
+        displayError(thisForm, 'Por favor Ingrese su nombre.');
+        return;
+      }
 
+       // Validar el campo 'email'
+       let email = formData.get('email');
+       if (!email) {
+         displayError(thisForm, 'Por favor, ingreser un correo electrónico.');
+         return;
+       }
+       if(!isValidEmail(email)){
+        displayError(thisForm, 'Por favor, introduce una dirección de correo electrónico válida.');
+        return;
+       }
+        // Validar el campo 'titulo'
+      let titulo = formData.get('titulo');
+      if (!titulo) {
+        displayError(thisForm, 'Por favor ingresa un asunto.');
+        return;
+      }
       if ( recaptcha ) {
         if(typeof grecaptcha !== "undefined" ) {
           grecaptcha.ready(function() {
@@ -56,7 +78,9 @@
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
-      if( response.ok ) {
+      
+      if( response.ok == true) {
+        return 'ok';
         return response.text();
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
@@ -82,4 +106,9 @@
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
+   // Función para validar el formato del correo electrónico
+   function isValidEmail(email) {
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
 })();

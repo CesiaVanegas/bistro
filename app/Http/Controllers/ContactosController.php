@@ -31,7 +31,13 @@ class ContactosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nombre' => 'required',
+            'email' => 'required',
+            'titulo' => 'required'
+        ]);
+        return response()->json('ok', 200);
+    
     }
 
     /**

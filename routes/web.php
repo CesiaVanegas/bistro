@@ -26,7 +26,8 @@ Route::resource('biblioteca', App\Http\Controllers\BibliotecaController::class);
 
 Route::resource('bebidas', App\Http\Controllers\BeibidasController::class);
 
-Route::resource('contacto', App\Http\Controllers\ContactosController::class);
+Route::post('contacto/guardar', [App\Http\Controllers\ContactosController::class,'store'])->name('contacto.store');
+Route::get('contacto/index', [App\Http\Controllers\ContactosController::class,'index'])->name('contacto.index');
 
 
 // retorno de imagenes de libros 
