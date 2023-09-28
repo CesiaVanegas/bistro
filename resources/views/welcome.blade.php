@@ -290,7 +290,10 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
                         <div class="icon-box icon-box-pink">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                            <div class="icon">
+                                {{-- <i class="bx bxl-dribbble"></i> --}}
+                                <i class="bi bi-bag-heart"></i>
+                            </div>
                             <h4 class="title"><a href="">Lorem Ipsum</a></h4>
                             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
                                 excepturi sint occaecati cupiditate</p>
@@ -300,7 +303,10 @@
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
                         data-aos-delay="100">
                         <div class="icon-box icon-box-cyan">
-                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <div class="icon">
+                                {{-- <i class="bx bx-file"></i> --}}
+                                <i class="bi bi-cup"></i>
+                            </div>
                             <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
                             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla</p>
@@ -310,7 +316,10 @@
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
                         data-aos-delay="200">
                         <div class="icon-box icon-box-green">
-                            <div class="icon"><i class="bx bx-tachometer"></i></div>
+                            <div class="icon">
+                                {{-- <i class="bx bx-tachometer"></i> --}}
+                                <i class="bi bi-book"></i>  
+                            </div>
                             <h4 class="title"><a href="">Magni Dolores</a></h4>
                             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                                 officia deserunt mollit anim</p>
@@ -320,7 +329,10 @@
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
                         data-aos-delay="300">
                         <div class="icon-box icon-box-blue">
-                            <div class="icon"><i class="bx bx-world"></i></div>
+                            <div class="icon">
+                                {{-- <i class="bx bx-world"></i> --}}
+                                <i class="bi bi-laptop"></i>
+                            </div>
                             <h4 class="title"><a href="">Nemo Enim</a></h4>
                             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
                                 blanditiis praesentium voluptatum</p>
@@ -680,9 +692,9 @@
 
                 <div class="row">
 
-                    <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up">
                         <div class="member">
-                            <img src="{{ asset('img/team/team-1.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/perfil_1.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Walter White</h4>
@@ -698,9 +710,9 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="member">
-                            <img src="{{ asset('img/team/team-2.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/perfil_2.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Sarah Jhonson</h4>
@@ -716,9 +728,9 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="member">
-                            <img src="{{ asset('img/team/team-3.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/perfil_3.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>William Anderson</h4>
@@ -733,10 +745,11 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="member">
-                            <img src="{{ asset('img/team/team-4.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/perfil_4.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Amanda Jepson</h4>
@@ -751,9 +764,24 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member">
+                            <img src="{{ asset('img/team/perfil_5.jpg') }}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Amanda Jepson</h4>
+                                    <span>Accountant</span>
+                                </div>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </section><!-- End Team Section -->
 
