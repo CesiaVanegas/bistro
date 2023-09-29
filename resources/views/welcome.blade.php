@@ -957,7 +957,7 @@
                             <div class="my-3">
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
                             </div>
                             <div class="text-center"><button type="submit">Enviar</button></div>
                         </form>

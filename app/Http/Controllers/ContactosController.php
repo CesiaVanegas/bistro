@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Contactos;
 use App\Models\Notificaciones;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Notification;
 
 class ContactosController extends Controller
 {
@@ -13,9 +14,8 @@ class ContactosController extends Controller
      */
     public function index()
     {
-        $data = Contactos::all(); 
-        $data2 = Notificaciones::all(); 
-        return view('contactos.index',compact('data'));
+        $data = Notificaciones::all();
+        return view('contactos.index', compact('data'));
     }
 
     /**
@@ -34,10 +34,25 @@ class ContactosController extends Controller
         $request->validate([
             'nombre' => 'required',
             'email' => 'required',
-            'titulo' => 'required'
+            'titulo' => 'required',
         ]);
+
+        $contacto = new Contactos();
+        $contacto->nombre = $request->input('nombre');
+        $contacto->email = $request->input('email');
+        $contacto->titulo = $request->input('titulo');
+        $contacto->mensaje = $request->input('mensaje');
+
+        if ($contacto->save()) {
+            $notificacion = new Notificaciones();
+            $notificacion->descripcion = '';
+            $notificacion->url = 'contacto/';
+            $notificacion->estado = 1;
+            $notificacion->contacto_id = $contacto->id;
+            $notificacion->save();
+        }
+
         return response()->json('ok', 200);
-    
     }
 
     /**
@@ -45,7 +60,8 @@ class ContactosController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $info = Notificaciones::find($id);
+        return response()->json($info);
     }
 
     /**

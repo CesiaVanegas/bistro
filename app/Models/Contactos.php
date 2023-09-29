@@ -10,7 +10,7 @@ class Contactos extends Model
     use HasFactory;
     protected $table = 'contactos';
     protected $fillable = ['tipo', 'descripcion', 'url', 'estado'];
-    protected $with = ['notificaciones'];
+    // protected $with = ['notificaciones'];
 
     public function notificaciones()
     {

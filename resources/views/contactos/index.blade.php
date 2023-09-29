@@ -10,8 +10,7 @@
             <table class="table table-hover">
                 <thead class="table-dark">
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Tipo</th>
+                        <th scope="col ">#</th>
                         <th scope="col">Descripción</th>
                         <th scope="col">Url</th>
                         <th scope="col">Estado</th>
@@ -20,42 +19,17 @@
                 </thead>
                 <tbody>
 
-                    @if (!empty($data) && !isset($data))
+                    @if (!empty($data))
                         @foreach ($data as $item)
                             <tr>
                                 <td>{{ $item['id'] }}</td>
-                                <td>{{ $item['nombre'] }}</td>
-                                <td>
-                                    <div class="collapse" id="descripcionCollapse{{ $loop->index }}">
-                                        {{ $item['descripcion'] }}
-                                    </div>
-                                    <p>
-                                        <a class="btn btn-link" data-bs-toggle="collapse"
-                                            href="#descripcionCollapse{{ $loop->index }}" role="button"
-                                            aria-expanded="false" aria-controls="descripcionCollapse{{ $loop->index }}">
-                                            Leer más
-                                        </a>
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="zoom">
-                                        <img src="{{ asset('storage/libros/' . $item['imagen']) }}" alt="Imagen del Postre"
-                                            style="max-width: 30px;">
-                                    </div>
+                                <td>{{ $item['descripcion'] }}</td>
+                                <td>{{ $item['url'] }}</td>
 
-                                </td>
-                                <td>{{ $item['estado'] }}</td>
-
-                                <td>
-                                    <a href="{{ route('biblioteca.edit', $item->id) }}" class="btn btn-primary"><i
-                                            class="fa-solid fa-pen-to-square"></i></a>
-                                    <form action="{{ route('biblioteca.destroy', $item->id) }}" method="POST"
-                                        style="display: inline-block">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger"><i
-                                                class="fa-solid fa-eraser"></i></button>
-                                    </form>
+                                <td>{{ $item['estado'] == 1 ? 'nueva' : 'revisada' }}</td>
+                                <td class="d-flex justify-content-center">
+                                    <i class="fas fa-info-circle fa-2x" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        onclick="contacto({{ $item['id'] }})"></i>
                                 </td>
                             </tr>
                         @endforeach
@@ -69,5 +43,25 @@
                 </tbody>
             </table>
         </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Información</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p hidden><strong>id</strong> <span id="id"></span></p>
+                        <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+                        <p><strong>Email:</strong> <span id="email"></span></p>
+                        <p><strong>Título:</strong> <span id="titulo"></span></p>
+                        <p><strong>Mensaje:</strong> <span id="mensaje"></span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- {{ url(request()->path()) }} -->
 @endsection
