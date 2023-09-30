@@ -1,35 +1,28 @@
-// Obtén los elementos por sus IDs
+function contacto(id_contacto) {
+    axios.get(url + '/' + id_contacto)
+        .then(res => {
+            const contacto = res.data.contacto;
+            // Actualiza el contenido de los elementos por sus IDs dentro del modal
+            document.getElementById('id').innerText = contacto.id;
+            document.getElementById('nombre').innerText = contacto.nombre;
+            document.getElementById('email').innerText = contacto.email;
+            document.getElementById('titulo').innerText = contacto.titulo;
+            document.getElementById('mensaje').innerText = contacto.mensaje;
 
-const id_contacto = document.getElementById('id');
-const nombre = document.getElementById('nombre');
-const email = document.getElementById('email');
-const titulo = document.getElementById('titulo');
-const mensaje = document.getElementById('mensaje');
-document.addEventListener('DOMContentLoaded', function () {
-function contacto(id_contacto = null) {
-if (id_contacto) {
-console.log(id_contacto);
-axios.get(url + '/' + id_contacto)
-.then(res => {
-const contacto = res.data.contacto;
-console.log(contacto.id);
-console.log(contacto.nombre);
-console.log(contacto.email);
-console.log(contacto.titulo);
-console.log(contacto.mensaje);
-console.log(contacto);
+            // Obtén el modal
+            var modal = document.getElementById('myModal');
 
-// Actualiza el contenido de los elementos por sus IDs
-id_contacto.innerText = contacto.id;
-nombre.innerText = contacto.nombre;
-email.innerText = contacto.email;
-titulo.innerText = contacto.titulo;
-mensaje.innerText = contacto.mensaje;
-})
-.catch(error => {
-console.log(error);
-});
+            // Abre el modal
+            modal.style.display = 'block';
+
+            // Cierra el modal cuando se hace clic fuera de él
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        })
+        .catch(error => {
+            console.log(error);
+        });
 }
-}
-contacto();
-});

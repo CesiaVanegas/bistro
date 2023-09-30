@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1 class=" fw-bold fs-2">Notificaciones</h1>
+        <h1 class="fw-bold fs-2">Notificaciones</h1>
     </div>
 
     <div class="container">
@@ -10,7 +10,7 @@
             <table class="table table-hover">
                 <thead class="table-dark">
                     <tr>
-                        <th scope="col ">#</th>
+                        <th scope="col">#</th>
                         <th scope="col">Descripción</th>
                         <th scope="col">Url</th>
                         <th scope="col">Estado</th>
@@ -43,8 +43,7 @@
                 </tbody>
             </table>
         </div>
-        @include ('contactos.modal')
-       
+        @include('contactos.modal')
     </div>
 
 @endsection
