@@ -223,26 +223,26 @@
                         <ul class="nav nav-tabs flex-column">
                             <li class="nav-item">
                                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
-                                    <h4>Modi sit est</h4>
-                                    <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
+                                    <h4>Local</h4>
+                                    <p>Ofrecemos un ambiente acogedor para nuestros clientes, un lugar para disfrutar de nuestros productos</p>
                                 </a>
                             </li>
                             <li class="nav-item mt-2">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
-                                    <h4>Unde praesentium sed</h4>
-                                    <p>Voluptas vel esse repudiandae quo excepturi.</p>
+                                    <h4>Postres/bebidas</h4>
+                                    <p>Contamos con una variedad de postres franceses y bebidas para nuestros consumidores.</p>
                                 </a>
                             </li>
                             <li class="nav-item mt-2">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
-                                    <h4>Pariatur explicabo vel</h4>
-                                    <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
+                                    <h4>Biblioteca</h4>
+                                    <p>Nuestra área de biblioteca contiene una gran variedad de libros de literatura francesa y de libros que despertaran tu interés por la lectura.</p>
                                 </a>
                             </li>
                             <li class="nav-item mt-2">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
-                                    <h4>Nostrum qui quasi</h4>
-                                    <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
+                                    <h4>Estudio/trabajo</h4>
+                                    <p>Nuestro local es un lugar acogedor y relajante para realizar tus actividades escolares o laborales, mientras disfrutas de un postre y una bebida.</p>
                                 </a>
                             </li>
                         </ul>
@@ -251,7 +251,7 @@
                         <div class="tab-content">
                             <div class="tab-pane active show" id="tab-1">
                                 <figure>
-                                    <img src="{{ asset('img/features-1.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/local.jpeg') }}" alt="no hay" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="tab-pane" id="tab-2">
@@ -294,9 +294,8 @@
                                 {{-- <i class="bx bxl-dribbble"></i> --}}
                                 <i class="bi bi-bag-heart"></i>
                             </div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                excepturi sint occaecati cupiditate</p>
+                            <h4 class="title"><a href="">Postres</a></h4>
+                            <p class="description">Ofrecemos variedad de postres franceses tradicionales que puedes disfrutar en nuestro local.</p>
                         </div>
                     </div>
 
@@ -307,9 +306,8 @@
                                 {{-- <i class="bx bx-file"></i> --}}
                                 <i class="bi bi-cup"></i>
                             </div>
-                            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla</p>
+                            <h4 class="title"><a href="">Bebidas</a></h4>
+                            <p class="description">Existe una variedad de bebidas para escoger y acompañar con tu postre de elección.</p>
                         </div>
                     </div>
 
@@ -320,9 +318,8 @@
                                 {{-- <i class="bx bx-tachometer"></i> --}}
                                 <i class="bi bi-book"></i>
                             </div>
-                            <h4 class="title"><a href="">Magni Dolores</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim</p>
+                            <h4 class="title"><a href="">Biblioteca</a></h4>
+                            <p class="description">Contamos con un espacio para explorar el mundo de la literatura francesa y disfrutar de un buen libro con un postre.</p>
                         </div>
                     </div>
 
@@ -333,9 +330,8 @@
                                 {{-- <i class="bx bx-world"></i> --}}
                                 <i class="bi bi-laptop"></i>
                             </div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum</p>
+                            <h4 class="title"><a href="">Estudio/trabajo</a></h4>
+                            <p class="description">Nuestro local es ideal y acogedor para estudiar o trabajar.</p>
                         </div>
                     </div>
 
@@ -379,9 +375,7 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                    cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
-                                    legam anim culpa.
+                                    Me parece un lugar bastante interesante para probar postres de una cultura diferente y conocer de la literatura francesa.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-2.jpg') }}" class="testimonial-img"
@@ -395,9 +389,7 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
-                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
-                                    minim.
+                                    Un lugar muy innovador, donde las personas de todas las edades pueden ir y disfrutar de un postre y un buen libro, esto crea un hábito muy bueno para nuestra sociedad actual.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-3.jpg') }}" class="testimonial-img"
@@ -411,9 +403,7 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
-                                    dolore labore illum veniam.
+                                    El local me parece muy lindo y amplio, el área de biblioteca es muy acogedora y el servicio al cliente es muy bueno!!
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-4.jpg') }}" class="testimonial-img"
@@ -427,9 +417,7 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                    culpa fore nisi cillum quid.
+                                    Me encanta la temática lleva el local, cómo combina los elementos franceses, la iluminación, los postres y la biblioteca. Todo es muy lindo, un lugar al que regresaría definitivamente!
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-5.jpg') }}" class="testimonial-img"
@@ -700,15 +688,15 @@
                             <img src="{{ asset('img/team/perfil_1.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
+                                    <h4>Oscar Urquilla</h4>
+                                    <span>Jefe de equipo</span>
                                 </div>
-                                <div class="social">
+                                <!-- <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
                                     <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -718,15 +706,15 @@
                             <img src="{{ asset('img/team/perfil_2.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Product Manager</span>
-                                </div>
-                                <div class="social">
+                                    <h4>Rebeca Paredes</h4>
+                                    <span>Gerente General</span>
+                                 </div>
+                                <!--<div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
                                     <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -736,15 +724,15 @@
                             <img src="{{ asset('img/team/perfil_3.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>William Anderson</h4>
-                                    <span>CTO</span>
-                                </div>
+                                    <h4>Cesia Vanegas</h4>
+                                    <span>Directora de Marketing</span>
+                                <!-- </div>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
                                     <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -755,15 +743,15 @@
                             <img src="{{ asset('img/team/perfil_4.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Amanda Jepson</h4>
-                                    <span>Accountant</span>
+                                    <h4>Yancy Recinos</h4>
+                                    <span>Operario</span>
                                 </div>
-                                <div class="social">
+                                <!-- <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
                                     <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -772,15 +760,15 @@
                             <img src="{{ asset('img/team/perfil_5.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Amanda Jepson</h4>
-                                    <span>Accountant</span>
-                                </div>
+                                    <h4>Karla Landaverde</h4>
+                                    <span>Administrativo</span>
+                                <!-- </div>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
                                     <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
