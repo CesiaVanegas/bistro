@@ -256,17 +256,17 @@
                             </div>
                             <div class="tab-pane" id="tab-2">
                                 <figure>
-                                    <img src="{{ asset('img/features-2.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/Postres_bebidas.jpeg') }}" alt="" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="tab-pane" id="tab-3">
                                 <figure>
-                                    <img src="{{ asset('img/features-3.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/Biblioteca.jpeg') }}" alt="" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="tab-pane" id="tab-4">
                                 <figure>
-                                    <img src="{{ asset('img/features-4.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/Estudio_trabajo.jpeg') }}" alt="" class="img-fluid">
                                 </figure>
                             </div>
                         </div>
