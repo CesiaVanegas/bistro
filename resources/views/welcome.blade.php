@@ -224,25 +224,29 @@
                             <li class="nav-item">
                                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
                                     <h4>Local</h4>
-                                    <p>Ofrecemos un ambiente acogedor para nuestros clientes, un lugar para disfrutar de nuestros productos</p>
+                                    <p>Ofrecemos un ambiente acogedor para nuestros clientes, un lugar para disfrutar de
+                                        nuestros productos</p>
                                 </a>
                             </li>
                             <li class="nav-item mt-2">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
                                     <h4>Postres/bebidas</h4>
-                                    <p>Contamos con una variedad de postres franceses y bebidas para nuestros consumidores.</p>
+                                    <p>Contamos con una variedad de postres franceses y bebidas para nuestros
+                                        consumidores.</p>
                                 </a>
                             </li>
                             <li class="nav-item mt-2">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
                                     <h4>Biblioteca</h4>
-                                    <p>Nuestra área de biblioteca contiene una gran variedad de libros de literatura francesa y de libros que despertaran tu interés por la lectura.</p>
+                                    <p>Nuestra área de biblioteca contiene una gran variedad de libros de literatura
+                                        francesa y de libros que despertaran tu interés por la lectura.</p>
                                 </a>
                             </li>
                             <li class="nav-item mt-2">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
                                     <h4>Estudio/trabajo</h4>
-                                    <p>Nuestro local es un lugar acogedor y relajante para realizar tus actividades escolares o laborales, mientras disfrutas de un postre y una bebida.</p>
+                                    <p>Nuestro local es un lugar acogedor y relajante para realizar tus actividades
+                                        escolares o laborales, mientras disfrutas de un postre y una bebida.</p>
                                 </a>
                             </li>
                         </ul>
@@ -256,7 +260,8 @@
                             </div>
                             <div class="tab-pane" id="tab-2">
                                 <figure>
-                                    <img src="{{ asset('img/Postres_bebidas.jpeg') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/Postres_bebidas.jpeg') }}" alt=""
+                                        class="img-fluid">
                                 </figure>
                             </div>
                             <div class="tab-pane" id="tab-3">
@@ -266,7 +271,8 @@
                             </div>
                             <div class="tab-pane" id="tab-4">
                                 <figure>
-                                    <img src="{{ asset('img/Estudio_trabajo.jpeg') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('img/Estudio_trabajo.jpeg') }}" alt=""
+                                        class="img-fluid">
                                 </figure>
                             </div>
                         </div>
@@ -295,7 +301,8 @@
                                 <i class="bi bi-bag-heart"></i>
                             </div>
                             <h4 class="title"><a href="">Postres</a></h4>
-                            <p class="description">Ofrecemos variedad de postres franceses tradicionales que puedes disfrutar en nuestro local.</p>
+                            <p class="description">Ofrecemos variedad de postres franceses tradicionales que puedes
+                                disfrutar en nuestro local.</p>
                         </div>
                     </div>
 
@@ -307,7 +314,8 @@
                                 <i class="bi bi-cup"></i>
                             </div>
                             <h4 class="title"><a href="">Bebidas</a></h4>
-                            <p class="description">Existe una variedad de bebidas para escoger y acompañar con tu postre de elección.</p>
+                            <p class="description">Existe una variedad de bebidas para escoger y acompañar con tu
+                                postre de elección.</p>
                         </div>
                     </div>
 
@@ -319,7 +327,8 @@
                                 <i class="bi bi-book"></i>
                             </div>
                             <h4 class="title"><a href="">Biblioteca</a></h4>
-                            <p class="description">Contamos con un espacio para explorar el mundo de la literatura francesa y disfrutar de un buen libro con un postre.</p>
+                            <p class="description">Contamos con un espacio para explorar el mundo de la literatura
+                                francesa y disfrutar de un buen libro con un postre.</p>
                         </div>
                     </div>
 
@@ -375,7 +384,8 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Me parece un lugar bastante interesante para probar postres de una cultura diferente y conocer de la literatura francesa.
+                                    Me parece un lugar bastante interesante para probar postres de una cultura diferente
+                                    y conocer de la literatura francesa.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-2.jpg') }}" class="testimonial-img"
@@ -389,7 +399,9 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Un lugar muy innovador, donde las personas de todas las edades pueden ir y disfrutar de un postre y un buen libro, esto crea un hábito muy bueno para nuestra sociedad actual.
+                                    Un lugar muy innovador, donde las personas de todas las edades pueden ir y disfrutar
+                                    de un postre y un buen libro, esto crea un hábito muy bueno para nuestra sociedad
+                                    actual.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-3.jpg') }}" class="testimonial-img"
@@ -403,7 +415,8 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    El local me parece muy lindo y amplio, el área de biblioteca es muy acogedora y el servicio al cliente es muy bueno!!
+                                    El local me parece muy lindo y amplio, el área de biblioteca es muy acogedora y el
+                                    servicio al cliente es muy bueno!!
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-4.jpg') }}" class="testimonial-img"
@@ -417,7 +430,9 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Me encanta la temática lleva el local, cómo combina los elementos franceses, la iluminación, los postres y la biblioteca. Todo es muy lindo, un lugar al que regresaría definitivamente!
+                                    Me encanta la temática lleva el local, cómo combina los elementos franceses, la
+                                    iluminación, los postres y la biblioteca. Todo es muy lindo, un lugar al que
+                                    regresaría definitivamente!
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-5.jpg') }}" class="testimonial-img"
@@ -681,9 +696,9 @@
                         ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
-                <div class="row">
+                <div class="row justify-content-center">
 
-                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up">
                         <div class="member">
                             <img src="{{ asset('img/team/perfil_1.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
@@ -701,14 +716,14 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="member">
                             <img src="{{ asset('img/team/perfil_2.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Rebeca Paredes</h4>
                                     <span>Gerente General</span>
-                                 </div>
+                                </div>
                                 <!--<div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -719,26 +734,43 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="member">
                             <img src="{{ asset('img/team/perfil_3.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Cesia Vanegas</h4>
                                     <span>Directora de Marketing</span>
-                                <!-- </div>
+                                    <!-- </div>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
                                     <a href=""><i class="bi bi-linkedin"></i></a>
                                 </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member">
+                            <img src="{{ asset('img/team/perfil_5.jpg') }}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Karla Landaverde</h4>
+                                    <span>Administrativo</span>
+                                    <!-- </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="member">
                             <img src="{{ asset('img/team/perfil_4.jpg') }}" class="img-fluid" alt="">
                             <div class="member-info">
@@ -747,33 +779,16 @@
                                     <span>Operario</span>
                                 </div>
                                 <!-- <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div> -->
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="member">
-                            <img src="{{ asset('img/team/perfil_5.jpg') }}" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Karla Landaverde</h4>
-                                    <span>Administrativo</span>
-                                <!-- </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div>    
+
         </section><!-- End Team Section -->
 
         <!-- ======= F.A.Q Section ======= -->
@@ -789,7 +804,7 @@
 
                 <div class="faq-list">
                     <ul>
-                        <li data-aos="fade-up">
+                        {{-- <li data-aos="fade-up">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
                                 data-bs-target="#faq-list-1">¿Hay servicio a domicilio? <i
                                     class="bx bx-chevron-down icon-show"></i><i
@@ -799,7 +814,7 @@
                                     sí, existe servicio a domicilio en nuestro local con Uber eats y Pedidos ya.
                                 </p>
                             </div>
-                        </li>
+                        </li> --}}
 
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
@@ -883,7 +898,7 @@
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Ubicación:</h4>
-                                <p>Plaza venecia soyapango</p>
+                                <p>Paseo Venecia soyapango</p>
                             </div>
 
                             <div class="email mt-4">
@@ -919,14 +934,14 @@
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="nombre" class="form-control" id="nombre"
-                                        placeholder="Nombre" >
+                                        placeholder="Nombre">
                                     @if ($errors->has('nombre'))
                                         <span class="text-danger">{{ $errors->first('nombre') }}</span>
                                     @endif
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
                                     <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Email" >
+                                        placeholder="Email">
                                     @if ($errors->has('email'))
                                         <span class="text-danger">{{ $errors->first('email') }}</span>
                                     @endif
@@ -934,13 +949,13 @@
                             </div>
                             <div class="form-group mt-3">
                                 <input type="text" class="form-control" name="titulo" id="titulo"
-                                    placeholder="Título" >
+                                    placeholder="Título">
                                 @if ($errors->has('titulo'))
                                     <span class="text-danger">{{ $errors->first('titulo') }}</span>
                                 @endif
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="mensaje" id="mensaje" rows="5" placeholder="Mensaje" ></textarea>
+                                <textarea class="form-control" name="mensaje" id="mensaje" rows="5" placeholder="Mensaje"></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>
