@@ -687,7 +687,7 @@
 
         <!-- ======= Team Section ======= -->
         <section id="team" class="team">
-            <div class="container">
+            <div class="">
 
                 <div class="section-title" data-aos="fade-up">
                     <h2 class="fuente-titulos-s"><b>Equipo de Trabajo</b></h2>
