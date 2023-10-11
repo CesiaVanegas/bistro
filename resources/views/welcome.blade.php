@@ -225,7 +225,7 @@
                                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
                                     <h4>Local</h4>
                                     <p>Ofrecemos un ambiente acogedor para nuestros clientes, un lugar para disfrutar de
-                                        nuestros productos</p>
+                                        nuestros productos <b id="preview">visualizar local</b></p>
                                 </a>
                             </li>
                             <li class="nav-item mt-2">
@@ -486,8 +486,7 @@
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
                                             title="{{ $libro->nombre . ' <br>' . $libro->descripcion }}"><i
                                                 class="bx bx-plus"></i></a>
-                                        <a href="portfolio-details.html" title="More Details"><i
-                                                class="bx bx-link"></i></a>
+                                        <a title="Copiar enlace" class="share-button"><i class="bx bx-link"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -507,7 +506,7 @@
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
                                             title="{{ $postre->nombre . ' <br>' . $postre->descripcion . ' <br>' . '$ ' . $postre->precio }}"><i
                                                 class="bx bx-plus"></i></a>
-                                        <a href="portfolio-details.html" title="More Details"><i
+                                        <a href="#" title="Copiar enlace" class="share-button"><i
                                                 class="bx bx-link"></i></a>
                                     </div>
                                 </div>
@@ -528,8 +527,8 @@
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
                                             title="{{ $bebida->nombre . ' <br>' . $bebida->descripcion . ' <br>' . '$ ' . $bebida->precio }}"><i
                                                 class="bx bx-plus"></i></a>
-                                        <a href="portfolio-details.html" title="More Details"><i
-                                                class="bx bx-link"></i></a>
+                                        <a href="#" title="Copiar enlace" class="share-button"><i
+                                                class="bx bx-link"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -787,7 +786,7 @@
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
 
         </section><!-- End Team Section -->
 
@@ -984,17 +983,17 @@
                         <div class="footer-info">
                             <h3 class="fuente-titulos-s"><b>Le café des mots</b></h3>
                             <p>
-                                A108 Adam Street <br>
-                                NY 535022, USA<br><br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                Paseo Venecia <br>
+                                Soyapango, El Salvador<br><br>
+                                <strong>Telefono:</strong> +503 7962 2449<br>
+                                <strong>Correo:</strong> lecafedesmots23@gmail.com<br>
                             </p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                {{-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> --}}
                             </div>
                         </div>
                     </div>
@@ -1002,15 +1001,15 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#hero">Inicio</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#about">Acerca de</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services">Servicios</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Productos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contacto</a></li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-links">
+                    {{-- <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -1019,7 +1018,7 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
                         </ul>
-                    </div>
+                    </div> --}}
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Our Newsletter</h4>
@@ -1104,5 +1103,29 @@
     </script> --}}
 
 </body>
+<script>
+    const shareButtons = document.querySelectorAll('.share-button');
+
+    shareButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Evitar el comportamiento por defecto del enlace
+            const url = 'URL_A_COMPARTIR_O_COPIAR'; // Reemplaza con la URL real
+            const tempInput = document.createElement('input');
+            tempInput.value = url;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('Enlace copiado al portapapeles: ' + url);
+        });
+    });
+    const previewElement = document.getElementById('preview');
+
+        previewElement.addEventListener('click', function() {
+            window.location.href = 'https://home.by.me/es/perfile/cesiavm17-1799'; // URL de redirección
+        });     
+</script>
+
+
 
 </html>
