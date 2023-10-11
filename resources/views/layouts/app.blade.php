@@ -126,8 +126,8 @@
                                         <!-- Contenido del menú de notificaciones -->
                                         <!-- Puedes agregar aquí el contenido de las notificaciones -->
 
-                                        <a class="dropdown-item" href="#">Notificación 1</a>
-                                        <a class="dropdown-item" href="#">Notificación 2</a>
+                                        <a class="dropdown-item" href="#"><i class="fa-regular fa-circle-check"></i> Notificación 1</a><hr>
+                                        <a class="dropdown-item" href="#"><i class="fa-regular fa-circle-check"></i> Notificación 2</a>
 
                                     </div>
                                 </div>

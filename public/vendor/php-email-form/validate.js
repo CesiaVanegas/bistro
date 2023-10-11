@@ -46,7 +46,7 @@
         // Validar el campo 'titulo'
       let titulo = formData.get('titulo');
       if (!titulo) {
-        displayError(thisForm, 'Por favor ingresa un asunto.');
+        displayError(thisForm, 'Por favor ingresa un título.');
         return;
       }
       if ( recaptcha ) {

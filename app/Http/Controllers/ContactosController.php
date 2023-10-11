@@ -15,6 +15,7 @@ class ContactosController extends Controller
     public function index()
     {
         $data = Notificaciones::all();
+        // return $data; 
         return view('contactos.index', compact('data'));
     }
 

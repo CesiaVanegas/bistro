@@ -11,26 +11,29 @@
                 <thead class="table-dark">
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Descripción</th>
-                        <th scope="col">Url</th>
+                        <th scope="col">Nombre completo</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Mensaje</th>
                         <th scope="col">Estado</th>
-                        <th scope="col">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
 
-                    @if (!empty($data))
+                    @if (!empty($data) && $data->count() > 0)
                         @foreach ($data as $item)
                             <tr>
-                                <td>{{ $item['id'] }}</td>
-                                <td>{{ $item['descripcion'] }}</td>
-                                <td>{{ $item['url'] }}</td>
-
+                                <td>{{ $item['contacto']['id'] }}</td>
+                                <td>{{ $item['contacto']['nombre'] }}</td>
+                                <td>{{ $item['contacto']['email'] }}</td>
+                                <td>{{ $item['contacto']['titulo'] }}</td>
+                                <td>{{ $item['contacto']['mensaje'] }}</td>
                                 <td>{{ $item['estado'] == 1 ? 'nueva' : 'revisada' }}</td>
-                                <td class="d-flex justify-content-center">
+                                
+                                {{-- <td>
                                     <i class="fas fa-info-circle fa-2x" data-bs-toggle="modal" data-bs-target="#myModal"
                                         onclick="contacto({{ $item['id'] }})"></i>
-                                </td>
+                                </td> --}}
                             </tr>
                         @endforeach
                     @else
