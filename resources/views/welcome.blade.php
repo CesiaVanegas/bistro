@@ -390,8 +390,8 @@
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-2.jpg') }}" class="testimonial-img"
                                     alt="">
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
+                                <h3>Sara Hernández</h3>
+                                <h4>Diseñadora</h4>
                             </div>
                         </div><!-- End testimonial item -->
 
@@ -406,8 +406,8 @@
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-3.jpg') }}" class="testimonial-img"
                                     alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
+                                <h3>Alejandra Martínez</h3>
+                                <h4>Administradora</h4>
                             </div>
                         </div><!-- End testimonial item -->
 
@@ -421,8 +421,8 @@
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-4.jpg') }}" class="testimonial-img"
                                     alt="">
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
+                                <h3>Brandon Guzmán</h3>
+                                <h4>Desarrollador de software</h4>
                             </div>
                         </div><!-- End testimonial item -->
 
@@ -437,8 +437,8 @@
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-5.jpg') }}" class="testimonial-img"
                                     alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
+                                <h3>Juan Gómez</h3>
+                                <h4>Emprendedor</h4>
                             </div>
                         </div><!-- End testimonial item -->
 
@@ -486,7 +486,7 @@
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
                                             title="{{ $libro->nombre . ' <br>' . $libro->descripcion }}"><i
                                                 class="bx bx-plus"></i></a>
-                                        <a title="Copiar enlace" class="share-button"><i class="bx bx-link"></i></a>
+                                        {{-- <a title="Copiar enlace" class="share-button"><i class="bx bx-link"></i></a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -506,8 +506,8 @@
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
                                             title="{{ $postre->nombre . ' <br>' . $postre->descripcion . ' <br>' . '$ ' . $postre->precio }}"><i
                                                 class="bx bx-plus"></i></a>
-                                        <a href="#" title="Copiar enlace" class="share-button"><i
-                                                class="bx bx-link"></i></a>
+                                        {{-- <a href="#" title="Copiar enlace" class="share-button"><i
+                                                class="bx bx-link"></i></a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -527,8 +527,8 @@
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
                                             title="{{ $bebida->nombre . ' <br>' . $bebida->descripcion . ' <br>' . '$ ' . $bebida->precio }}"><i
                                                 class="bx bx-plus"></i></a>
-                                        <a href="#" title="Copiar enlace" class="share-button"><i
-                                                class="bx bx-link"></i> </a>
+                                        {{-- <a href="#" title="Copiar enlace" class="share-button"><i
+                                                class="bx bx-link"></i> </a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -697,24 +697,6 @@
 
                 <div class="row justify-content-center">
 
-                    <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up">
-                        <div class="member">
-                            <img src="{{ asset('img/team/perfil_1.jpg') }}" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Oscar Urquilla</h4>
-                                    <span>Jefe de equipo</span>
-                                </div>
-                                <!-- <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="member">
                             <img src="{{ asset('img/team/perfil_2.jpg') }}" class="img-fluid" alt="">
@@ -751,9 +733,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up">
+                        <div class="member">
+                            <img src="{{ asset('img/team/perfil_1.jpg') }}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Oscar Urquilla</h4>
+                                    <span>Jefe de equipo</span>
+                                </div>
+                                <!-- <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="member">
-                            <img src="{{ asset('img/team/perfil_5.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/perfil_5.jpeg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Karla Landaverde</h4>
@@ -771,7 +770,7 @@
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="member">
-                            <img src="{{ asset('img/team/perfil_4.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('img/team/perfil_4.jpeg') }}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Yancy Recinos</h4>
@@ -859,7 +858,7 @@
 
                         <li data-aos="fade-up" data-aos-delay="400">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">¿cuál se el tipo de comida ofrece su
+                                data-bs-target="#faq-list-5" class="collapsed">¿Cuál se el tipo de comida ofrece su
                                 local? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
@@ -989,9 +988,9 @@
                                 <strong>Correo:</strong> lecafedesmots23@gmail.com<br>
                             </p>
                             <div class="social-links mt-3">
-                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                {{-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> --}}
+                                <a target="blank" href="https://www.facebook.com/profile.php?id=61552236770252&mibextid=2JQ9oc" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a target="blank" href="https://instagram.com/lecafe.desmots?igshid=MzRlODBiNWFlZA==" class="instagram"><i class="bx bxl-instagram"></i></a>
                                 {{-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> --}}
                             </div>
@@ -999,7 +998,7 @@
                     </div>
 
                     <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
+                        {{-- <h4>Useful Links</h4> --}}
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="#hero">Inicio</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#about">Acerca de</a></li>
@@ -1021,11 +1020,11 @@
                     </div> --}}
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
+                        {{-- <h4>Our Newsletter</h4>
                         <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
+                        </form> --}}
 
                     </div>
 
@@ -1122,7 +1121,7 @@
     const previewElement = document.getElementById('preview');
 
         previewElement.addEventListener('click', function() {
-            window.location.href = 'https://home.by.me/es/perfile/cesiavm17-1799'; // URL de redirección
+            window.location.href = 'https://home.by.me/es/project/cesiavm17-1799/cafe-de-mots'; // URL de redirección
         });     
 </script>
 
