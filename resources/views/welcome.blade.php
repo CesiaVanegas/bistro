@@ -76,24 +76,6 @@
                     <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
                     <li><a class="nav-link scrollto " href="#portfolio">Productos</a></li>
                     <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
-                    {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                        class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li> --}}
                     <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -129,11 +111,6 @@
                             y adquirir nuevos conocimientos a través del inmenso mundo de la literatura, con la
                             colección especial de libros expuestos en nuestra biblioteca.
                         </p>
-                        {{-- <div class="icon-box" data-aos="fade-up">
-                            <i class="bx bx-receipt"></i>
-                            <h4>Corporis voluptates sit</h4>
-                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                        </div> --}}
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                             <i class='bx bx-coffee'></i>
                             <h4 class="fuente-titulos-s"><b>Visión</b></h4>
@@ -159,60 +136,6 @@
 
             </div>
         </section><!-- End About Section -->
-
-        <!-- ======= Steps Section ======= -->
-        {{-- <section id="steps" class="steps section-bg">
-            <div class="container">
-
-                <div class="row no-gutters">
-
-                    <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in">
-                        <span>01</span>
-                        <h4>Lorem Ipsum</h4>
-                        <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
-                        </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="100">
-                        <span>02</span>
-                        <h4>Repellat Nihil</h4>
-                        <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire
-                            leno para dest</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="200">
-                        <span>03</span>
-                        <h4> Ad ad velit qui</h4>
-                        <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis
-                        </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="300">
-                        <span>04</span>
-                        <h4>Repellendus molestiae</h4>
-                        <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider
-                            lando casa</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="400">
-                        <span>05</span>
-                        <h4>Sapiente Magnam</h4>
-                        <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est
-                            quibusdam</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="500">
-                        <span>06</span>
-                        <h4>Facilis Impedit</h4>
-                        <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae
-                            voluptatibus corporis sequi</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section> --}}
-        <!-- End Steps Section -->
 
         <!-- ======= Features Section ======= -->
         <section id="features" class="features">
@@ -288,16 +211,14 @@
 
                 <div class="section-title" data-aos="fade-up">
                     <h2 class="fuente-titulos-s"><b>Servicios</b></h2>
-                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
+
                 </div>
 
                 <div class="row">
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
                         <div class="icon-box icon-box-pink">
                             <div class="icon">
-                                {{-- <i class="bx bxl-dribbble"></i> --}}
+
                                 <i class="bi bi-bag-heart"></i>
                             </div>
                             <h4 class="title"><a href="">Postres</a></h4>
@@ -310,7 +231,7 @@
                         data-aos-delay="100">
                         <div class="icon-box icon-box-cyan">
                             <div class="icon">
-                                {{-- <i class="bx bx-file"></i> --}}
+
                                 <i class="bi bi-cup"></i>
                             </div>
                             <h4 class="title"><a href="">Bebidas</a></h4>
@@ -323,7 +244,7 @@
                         data-aos-delay="200">
                         <div class="icon-box icon-box-green">
                             <div class="icon">
-                                {{-- <i class="bx bx-tachometer"></i> --}}
+
                                 <i class="bi bi-book"></i>
                             </div>
                             <h4 class="title"><a href="">Biblioteca</a></h4>
@@ -336,7 +257,7 @@
                         data-aos-delay="300">
                         <div class="icon-box icon-box-blue">
                             <div class="icon">
-                                {{-- <i class="bx bx-world"></i> --}}
+
                                 <i class="bi bi-laptop"></i>
                             </div>
                             <h4 class="title"><a href="">Estudio/trabajo</a></h4>
@@ -355,30 +276,11 @@
 
                 <div class="section-title" data-aos="fade-up">
                     <h2 class="fuente-titulos-s"><b>Reseñas</b></h2>
-                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
+
                 </div>
 
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
                     <div class="swiper-wrapper">
-
-                        {{-- <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-                                    rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                    risus at semper.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
-                                    alt="">
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                            </div>
-                        </div> --}}
-                        <!-- End testimonial item -->
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
@@ -449,15 +351,12 @@
             </div>
         </section><!-- End Testimonials Section -->
 
-        <!-- ======= Portfolio Section ======= -->
+        <!-- ======= Products Section ======= -->
         <section id="portfolio" class="portfolio section-bg">
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
                     <h2 class="fuente-titulos-s"><b>Productos</b></h2>
-                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
                 <div class="row" data-aos="fade-up">
@@ -534,155 +433,9 @@
                             </div>
                         </div>
                     @endforeach
-
-                    {{-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('img/portfolio/portfolio-2.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('img/portfolio/portfolio-2.jpg') }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('img/portfolio/portfolio-3.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>App 2</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('img/portfolio/portfolio-3.jpg') }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('img/portfolio/portfolio-4.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 2</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('img/portfolio/portfolio-4.jpg') }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('img/portfolio/portfolio-5.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Web 2</h4>
-                                <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('img/portfolio/portfolio-5.jpg') }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('img/portfolio/portfolio-6.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>App 3</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('img/portfolio/portfolio-6.jpg') }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('img/portfolio/portfolio-7.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 1</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('img/portfolio/portfolio-7.jpg') }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('img/portfolio/portfolio-8.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 3</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('img/portfolio/portfolio-8.jpg') }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('img/portfolio/portfolio-9.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('img/portfolio/portfolio-9.jpg') }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-
                 </div>
-
             </div>
-        </section><!-- End Portfolio Section -->
+        </section><!-- End Products Section -->
 
         <!-- ======= Team Section ======= -->
         <section id="team" class="team">
@@ -690,9 +443,6 @@
 
                 <div class="section-title" data-aos="fade-up">
                     <h2 class="fuente-titulos-s"><b>Equipo de Trabajo</b></h2>
-                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
                 <div class="row justify-content-center">
@@ -722,13 +472,6 @@
                                 <div class="member-info-content">
                                     <h4>Cesia Vanegas</h4>
                                     <span>Directora de Marketing</span>
-                                    <!-- </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div> -->
                                 </div>
                             </div>
                         </div>
@@ -741,12 +484,6 @@
                                     <h4>Oscar Urquilla</h4>
                                     <span>Jefe de equipo</span>
                                 </div>
-                                <!-- <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -757,13 +494,7 @@
                                 <div class="member-info-content">
                                     <h4>Karla Landaverde</h4>
                                     <span>Administrativo</span>
-                                    <!-- </div>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div> -->
+
                                 </div>
                             </div>
                         </div>
@@ -776,12 +507,6 @@
                                     <h4>Yancy Recinos</h4>
                                     <span>Operario</span>
                                 </div>
-                                <!-- <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div> -->
                             </div>
                         </div>
                     </div>
@@ -795,25 +520,11 @@
 
                 <div class="section-title" data-aos="fade-up">
                     <h2 class="fuente-titulos-s"><b>Preguntas frecuentes</b></h2>
-                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
+
                 </div>
 
                 <div class="faq-list">
                     <ul>
-                        {{-- <li data-aos="fade-up">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                                data-bs-target="#faq-list-1">¿Hay servicio a domicilio? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                                <p>
-                                    sí, existe servicio a domicilio en nuestro local con Uber eats y Pedidos ya.
-                                </p>
-                            </div>
-                        </li> --}}
-
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
                                 data-bs-target="#faq-list-2" class="collapsed">¿Qué tipos de libros tienen
@@ -884,9 +595,6 @@
 
                 <div class="section-title" data-aos="fade-up">
                     <h2 class="fuente-titulos-s"><b>Contacto</b></h2>
-                    {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
                 </div>
 
                 <div class="row no-gutters justify-content-center" data-aos="fade-up">
@@ -989,8 +697,11 @@
                             </p>
                             <div class="social-links mt-3">
                                 {{-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> --}}
-                                <a target="blank" href="https://www.facebook.com/profile.php?id=61552236770252&mibextid=2JQ9oc" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a target="blank" href="https://instagram.com/lecafe.desmots?igshid=MzRlODBiNWFlZA==" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a target="blank"
+                                    href="https://www.facebook.com/profile.php?id=61552236770252&mibextid=2JQ9oc"
+                                    class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a target="blank" href="https://instagram.com/lecafe.desmots?igshid=MzRlODBiNWFlZA=="
+                                    class="instagram"><i class="bx bxl-instagram"></i></a>
                                 {{-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> --}}
                             </div>
@@ -1063,43 +774,6 @@
 
     <!-- Template Main JS File -->
     <script src="{{ url('js/main.js') }}"></script>
-    {{-- <script>
-        url = '{{ request()->path() }}'
-        $.ajax({
-            type: "GET", // Usa POST para enviar datos al servidor
-            url: url + 'libros_r',
-            dataType: "json", // Espera una respuesta JSON
-            success: function(response) {
-
-                // Recorre los datos JSON y crea los elementos HTML
-                $.each(response, function(index, libro) {
-                    var portfolioItem = `
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="{{ asset('storage/libros') }}/${libro.imagen}" class="img-fluid" alt="${libro.nombre}">
-                            <div class="portfolio-info">
-                                <h4>${libro.nombre}</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ asset('storage/libros') }}/${libro.imagen}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${libro.nombre}"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    `;
-
-                    // Agrega el elemento generado al contenedor correspondiente
-                    $(".productos").append(portfolioItem);
-                });
-
-            },
-            error: function(error) {
-                // Si ocurre un error en la solicitud AJAX, puedes manejarlo aquí
-                console.error("Error en la solicitud AJAX:", error);
-            }
-        });
-    </script> --}}
 
 </body>
 <script>
@@ -1120,9 +794,10 @@
     });
     const previewElement = document.getElementById('preview');
 
-        previewElement.addEventListener('click', function() {
-            window.location.href = 'https://home.by.me/es/project/cesiavm17-1799/cafe-de-mots'; // URL de redirección
-        });     
+    previewElement.addEventListener('click', function() {
+        window.location.href =
+            'https://home.by.me/es/project/cesiavm17-1799/cafe-de-mots'; // URL de redirección
+    });
 </script>
 
 
