@@ -64,7 +64,7 @@
         <div class="container d-flex justify-content-between">
 
             <div class="logo">
-                <h1><a href="{{ url('/') }}">Le Café des mots</a></h1>
+                <h1><a href="{{ url('/') }}">Le Café des Mots</a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
@@ -87,7 +87,7 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="container text-center text-md-left" data-aos="fade-up">
-            <h1 class="fuente-titulos">Bienvenidos a le café des mots</h1>
+            <h1 class="fuente-titulos">Bienvenidos a Le Café des Mots</h1>
             <h2 class="fuente-titulos">"Donde el sabor nace de un libro y se convierte en un postre"</h2>
             <a href="#about" class="btn-get-started scrollto">Iniciar</a>
         </div>
@@ -379,7 +379,7 @@
                                     alt="{{ $libro->nombre }}">
                                 <div class="portfolio-info">
                                     <h4>{{ $libro->nombre }}</h4>
-                                    <p>Web</p>
+                                    {{-- <p>Web</p> --}}
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/libros/' . $libro->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
@@ -399,7 +399,7 @@
                                     alt="{{ $postre->nombre }}">
                                 <div class="portfolio-info">
                                     <h4>{{ $postre->nombre }}</h4>
-                                    <p>App</p>
+                                    {{-- <p>App</p> --}}
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/postres/' . $postre->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
@@ -420,7 +420,7 @@
                                     alt="{{ $bebida->nombre }}">
                                 <div class="portfolio-info">
                                     <h4>{{ $bebida->nombre }}</h4>
-                                    <p>App</p>
+                                    {{-- <p>App</p> --}}
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/bebidas/' . $bebida->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
@@ -505,7 +505,7 @@
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Yancy Recinos</h4>
-                                    <span>Operario</span>
+                                    <span>Operario Cajera</span>
                                 </div>
                             </div>
                         </div>
@@ -569,15 +569,14 @@
 
                         <li data-aos="fade-up" data-aos-delay="400">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">¿Cuál se el tipo de comida ofrece su
+                                data-bs-target="#faq-list-5" class="collapsed">¿Cuál es el tipo de comida ofrece su
                                 local? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                                 <p>
                                     El tipo de comida que ofrece nuestro local son postres tradicionales de Francia,
                                     y contamos con diferentes tipos de postres como lo son: Marcarons,
-                                    crême brule y crepas dulces, entre otros. Todo esto con el fin de que nuestro
-                                    visitante
+                                    Crème brûlèe, crepas dulces, entre otros. Todo esto con el fin de que nuestros clientes 
                                     conozcan nuevos sabores de un país diferente.
                                 </p>
                             </div>
@@ -688,7 +687,7 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
-                            <h3 class="fuente-titulos-s"><b>Le café des mots</b></h3>
+                            <h3 class="fuente-titulos-s"><b>Le Café des Mots</b></h3>
                             <p>
                                 Paseo Venecia <br>
                                 Soyapango, El Salvador<br><br>

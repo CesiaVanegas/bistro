@@ -65,6 +65,13 @@ class LibrosSeeder extends Seeder
                 'descripcion' => 'Los cócteles de Blake y Mortimer nos sumergen en el ambiente tan británico del cómic. En el Centaur Club, del que son miembros nuestros héroes, degustaremos cócteles clásicos de la vieja Inglaterra. Redescubriremos el Zapatero de Jerez, que dio lugar a la invención de la paja y la coctelera. Prenderemos un Blue Blazer, el primer cóctel flambeado de la historia. Después de la cena, un cóctel After Eight con sabores de menta y chocolate es imprescindible.',
                 'estado' => 'Inactivo',
             ],
+            [
+                'nombre' => 'Diccionario pocket francés',
+                'precio' => null,
+                'imagen' => 'diccionario_pocket_francés.jpg',
+                'descripcion' => 'Transcripción fonética de las palabras en francés y Suplemento de pronunciación y ortografía.',
+                'estado' => 'Inactivo',
+            ],
         ]);
     }
 }
