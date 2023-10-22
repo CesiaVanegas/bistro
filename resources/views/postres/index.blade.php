@@ -4,6 +4,16 @@
     <div class="container">
         <a href="{{ route('postres.create') }}" class="btn btn-primary mb-2"><i class="fa-solid fa-plus"></i> Agregar
             Postres</a>
+            <form action="{{ route('postres.index') }}" method="GET" class="mb-3">
+                <div class="input-group">
+                    <input type="text" name="search" class="form-control" placeholder="Buscar postres"
+                        value="{{ request('search') }}">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                        <a href="{{ route('postres.index') }}" type="button" class="btn btn-secondary">Limpiar</a>
+                    </div>
+                </div>
+            </form>
         <div class="table-responsive">
             <table class="table table-hover">
                 <thead class="table-dark">
@@ -46,6 +56,29 @@
                     @endforeach
                 </tbody>
             </table>
+        </div>
+        <div class="custom-pagination">
+            <nav aria-label="Pagination Navigation">
+                <ul class="pagination">
+                    @if ($data->previousPageUrl())
+                        <li class="page-item">
+                            <a class="page-link" href="{{ $data->previousPageUrl() }}" rel="prev">&laquo; Anterior</a>
+                        </li>
+                    @endif
+
+                    @foreach ($data->getUrlRange(1, $data->lastPage()) as $page => $url)
+                        <li class="page-item{{ $page == $data->currentPage() ? ' active' : '' }}">
+                            <a class="page-link" href="{{ $url }}">{{ $page }}</a>
+                        </li>
+                    @endforeach
+
+                    @if ($data->nextPageUrl())
+                        <li class="page-item">
+                            <a class="page-link" href="{{ $data->nextPageUrl() }}" rel="next">Siguiente &raquo;</a>
+                        </li>
+                    @endif
+                </ul>
+            </nav>
         </div>
     </div>
 @endsection

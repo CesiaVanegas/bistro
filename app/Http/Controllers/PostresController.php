@@ -11,10 +11,12 @@ class PostresController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data = Postres::all();
-
+        $search = $request->input('search');
+        $data = Postres::where('nombre', 'LIKE', "%$search%")
+            ->orderBy('id', 'desc')
+            ->paginate(5);
         return view('postres.index', compact('data'));
     }
 

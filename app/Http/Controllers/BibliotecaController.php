@@ -11,10 +11,12 @@ class BibliotecaController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data = Libros::all();
-
+        $search = $request->input('search');
+        $data = Libros::where('nombre', 'LIKE', "%$search%")
+            ->orderBy('id', 'desc')
+            ->paginate(5);
         return view('biblioteca.index', compact('data'));
     }
 

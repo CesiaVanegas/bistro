@@ -11,10 +11,12 @@ class BeibidasController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data = Bebidas::all();
-
+        $search = $request->input('search');
+        $data = Bebidas::where('nombre', 'LIKE', "%$search%")
+            ->orderBy('id', 'desc')
+            ->paginate(5);
         return view('bebidas.index', compact('data'));
     }
 
