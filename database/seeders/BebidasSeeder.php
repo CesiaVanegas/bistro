@@ -97,7 +97,7 @@ class BebidasSeeder extends Seeder
             [
                 'nombre' => 'Cappuccino',
                 'precio' => 3.00,
-                'imagen' => 'Cappuccino.jpg',
+                'imagen' => 'Cappuccino.jpeg',
                 'tipo' => 'Calientes',
                 'estado' => 'Activo',
             ],

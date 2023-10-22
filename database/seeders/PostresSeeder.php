@@ -31,7 +31,7 @@ class PostresSeeder extends Seeder
             [
                 'nombre' => 'Croissant',
                 'precio' => 3.50,
-                'imagen' => 'Croissant.jpg',
+                'imagen' => 'Croissant.jpeg',
                 'descripcion' => 'Es una pieza de panadería de origen francés.',
                 'estado' => 'Activo',
             ],
