@@ -23,7 +23,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Precio</th>
-                        <th scope="col">Descripción</th>
+                        {{-- <th scope="col">Descripción</th> --}}
                         <th scope="col">Imagen</th>
                         <th scope="col">Estado</th>
                         <th scope="col">Acciones</th>
@@ -35,7 +35,7 @@
                             <td>{{ $item['id'] }}</td>
                             <td>{{ $item['nombre'] }}</td>
                             <td>{{ $item['precio'] }}</td>
-                            <td>{{ $item['descripcion'] }}</td>
+                            {{-- <td>{{ $item['descripcion'] }}</td> --}}
                             <td>
                                 <div class="zoom">
                                     <img src="{{ asset('storage/bebidas/' . $item['imagen']) }}" alt="Imagen del Postre"
