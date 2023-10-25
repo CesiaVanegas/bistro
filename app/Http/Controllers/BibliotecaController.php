@@ -15,7 +15,7 @@ class BibliotecaController extends Controller
     {
         $search = $request->input('search');
         $data = Libros::where('nombre', 'LIKE', "%$search%")
-            ->orderBy('id', 'desc')
+            ->orderBy('id', 'asc')
             ->paginate(5);
         return view('biblioteca.index', compact('data'));
     }

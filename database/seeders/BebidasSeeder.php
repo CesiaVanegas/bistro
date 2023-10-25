@@ -40,21 +40,21 @@ class BebidasSeeder extends Seeder
             ],
             [
                 'nombre' => 'Eau (agua)',
-                'precio' => 1.25,
+                'precio' => 1.00,
                 'imagen' => 'Agua.jpg',
                 'tipo' => 'Frias',
                 'estado' => 'Activo',
             ],
             [
                 'nombre' => 'Jus d’orange (Jugo de naranja)',
-                'precio' => 1.75,
+                'precio' => 1.50,
                 'imagen' => 'jugo_naranja.jpg',
                 'tipo' => 'Frias',
                 'estado' => 'Activo',
             ],
             [
                 'nombre' => 'Citron pressé (limonada)',
-                'precio' => 3.00,
+                'precio' => 2.00,
                 'imagen' => 'limonada.jpg',
                 'tipo' => 'Frias',
                 'estado' => 'Activo',
@@ -97,7 +97,7 @@ class BebidasSeeder extends Seeder
             [
                 'nombre' => 'Cappuccino',
                 'precio' => 3.00,
-                'imagen' => 'Cappuccino.jpeg',
+                'imagen' => 'Cappuccino.jpg',
                 'tipo' => 'Calientes',
                 'estado' => 'Activo',
             ],

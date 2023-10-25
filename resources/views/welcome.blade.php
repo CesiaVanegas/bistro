@@ -383,7 +383,7 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/libros/' . $libro->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ $libro->nombre . ' <br>' . $libro->descripcion }}"><i
+                                            title="{{ '<p class="fst-italic fw-bold">'.$libro->nombre .'</p>' . $libro->descripcion }}"><i
                                                 class="bx bx-plus"></i></a>
                                         {{-- <a title="Copiar enlace" class="share-button"><i class="bx bx-link"></i></a> --}}
                                     </div>
@@ -403,7 +403,7 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/postres/' . $postre->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ $postre->nombre . ' <br>' . $postre->descripcion . ' <br>' . '$ ' . $postre->precio }}"><i
+                                            title="{{ '<p class="fst-italic fw-bold">'. $postre->nombre .'</p>' . $postre->descripcion . '<p class="fw-bold">'. '$' . $postre->precio.'</p>' }}"><i
                                                 class="bx bx-plus"></i></a>
                                         {{-- <a href="#" title="Copiar enlace" class="share-button"><i
                                                 class="bx bx-link"></i></a> --}}
@@ -424,7 +424,7 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/bebidas/' . $bebida->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ $bebida->nombre . ' <br>' . $bebida->descripcion . ' <br>' . '$ ' . $bebida->precio }}"><i
+                                            title="{{ '<p class="fst-italic fw-bold">' .$bebida->nombre .'</p>' . $bebida->descripcion . '<p class="fw-bold">'. '$' . $bebida->precio.'</p>' }}"><i
                                                 class="bx bx-plus"></i></a>
                                         {{-- <a href="#" title="Copiar enlace" class="share-button"><i
                                                 class="bx bx-link"></i> </a> --}}

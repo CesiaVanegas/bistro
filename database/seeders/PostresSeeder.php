@@ -22,7 +22,7 @@ class PostresSeeder extends Seeder
                 'estado' => 'Activo',
             ],
             [
-                'nombre' => 'Crêpe',
+                'nombre' => 'Crêpe (Crepas dulces)',
                 'precio' => 3.50,
                 'imagen' => 'Crepas_dulces.jpg',
                 'descripcion' => 'Es un tipo de masa cocinada muy delgada a base de harina de trigo en forma de disco.',
@@ -51,7 +51,7 @@ class PostresSeeder extends Seeder
             ],
             [
                 'nombre' => 'Mille-Feuille',
-                'precio' => 3.00 ,
+                'precio' => 2.50 ,
                 'imagen' => 'Mille-Feuille.jpg',
                 'descripcion' => 'Es un postre francés hecho de hojaldre con capas de crema pastelera. Su forma moderna estuvo influenciada por las mejoras realizadas por Marie-Antoine Carême.',
                 'estado' => 'Activo',
