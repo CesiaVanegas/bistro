@@ -15,7 +15,7 @@ class BeibidasController extends Controller
     {
         $search = $request->input('search');
         $data = Bebidas::where('nombre', 'LIKE', "%$search%")
-            ->orderBy('id', 'desc')
+            ->orderBy('id', 'asc')
             ->paginate(5);
         return view('bebidas.index', compact('data'));
     }
