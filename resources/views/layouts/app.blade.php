@@ -125,10 +125,14 @@
                                     <div class="dropdown-menu dropdown-menu-end">
                                         <!-- Contenido del menú de notificaciones -->
                                         <!-- Puedes agregar aquí el contenido de las notificaciones -->
-
-                                        <a class="dropdown-item" href="#"><i class="fa-regular fa-circle-check"></i> Notificación 1</a><hr>
-                                        <a class="dropdown-item" href="#"><i class="fa-regular fa-circle-check"></i> Notificación 2</a>
-
+                                       
+                                        @if (isset($notificaciones))
+                                        @foreach ($notificaciones as $item)
+                                            <a class="dropdown-item" href="#"><i class="fa-regular fa-circle-check"></i> {{$item->contacto->nombre}}</a>
+                                            <hr>
+                                        @endforeach
+                                    @endif
+                   
                                     </div>
                                 </div>
                             </li>
