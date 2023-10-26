@@ -15,7 +15,7 @@ class PostresController extends Controller
     {
         $search = $request->input('search');
         $data = Postres::where('nombre', 'LIKE', "%$search%")
-            ->orderBy('id', 'desc')
+            ->orderBy('id', 'asc')
             ->paginate(5);
         return view('postres.index', compact('data'));
     }
