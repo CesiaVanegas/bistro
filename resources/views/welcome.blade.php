@@ -155,7 +155,7 @@
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
                                     <h4>Postres/bebidas</h4>
                                     <p>Contamos con una variedad de postres franceses y bebidas para nuestros
-                                        consumidores.</p>
+                                        consumidores. <b id="menu">Menú digital</b></p>
                                 </a>
                             </li>
                             <li class="nav-item mt-2">
@@ -383,7 +383,7 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/libros/' . $libro->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ '<p class="fst-italic fw-bold">'.$libro->nombre .'</p>' . $libro->descripcion }}"><i
+                                            title="{{ '<p class="fst-italic fw-bold">' . $libro->nombre . '</p>' . $libro->descripcion }}"><i
                                                 class="bx bx-plus"></i></a>
                                         {{-- <a title="Copiar enlace" class="share-button"><i class="bx bx-link"></i></a> --}}
                                     </div>
@@ -403,7 +403,7 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/postres/' . $postre->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ '<p class="fst-italic fw-bold">'. $postre->nombre .'</p>' . $postre->descripcion . '<p class="fw-bold">'. '$' . $postre->precio.'</p>' }}"><i
+                                            title="{{ '<p class="fst-italic fw-bold">' . $postre->nombre . '</p>' . $postre->descripcion . '<p class="fw-bold">' . '$' . $postre->precio . '</p>' }}"><i
                                                 class="bx bx-plus"></i></a>
                                         {{-- <a href="#" title="Copiar enlace" class="share-button"><i
                                                 class="bx bx-link"></i></a> --}}
@@ -424,7 +424,7 @@
                                     <div class="portfolio-links">
                                         <a href="{{ asset('storage/bebidas/' . $bebida->imagen) }}"
                                             data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                            title="{{ '<p class="fst-italic fw-bold">' .$bebida->nombre .'</p>' . $bebida->descripcion . '<p class="fw-bold">'. '$' . $bebida->precio.'</p>' }}"><i
+                                            title="{{ '<p class="fst-italic fw-bold">' . $bebida->nombre . '</p>' . $bebida->descripcion . '<p class="fw-bold">' . '$' . $bebida->precio . '</p>' }}"><i
                                                 class="bx bx-plus"></i></a>
                                         {{-- <a href="#" title="Copiar enlace" class="share-button"><i
                                                 class="bx bx-link"></i> </a> --}}
@@ -576,7 +576,8 @@
                                 <p>
                                     El tipo de comida que ofrece nuestro local son postres tradicionales de Francia,
                                     y contamos con diferentes tipos de postres como lo son: Marcarons,
-                                    Crème brûlèe, crepas dulces, entre otros. Todo esto con el fin de que nuestros clientes 
+                                    Crème brûlèe, crepas dulces, entre otros. Todo esto con el fin de que nuestros
+                                    clientes
                                     conozcan nuevos sabores de un país diferente.
                                 </p>
                             </div>
@@ -776,29 +777,26 @@
 
 </body>
 <script>
-    const shareButtons = document.querySelectorAll('.share-button');
-
-    shareButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            event.preventDefault(); // Evitar el comportamiento por defecto del enlace
-            const url = 'URL_A_COMPARTIR_O_COPIAR'; // Reemplaza con la URL real
-            const tempInput = document.createElement('input');
-            tempInput.value = url;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
-            alert('Enlace copiado al portapapeles: ' + url);
-        });
-    });
     const previewElement = document.getElementById('preview');
 
     previewElement.addEventListener('click', function() {
-        window.location.href =
-            'https://home.by.me/es/project/cesiavm17-1799/cafe-de-mots'; // URL de redirección
+        window.open(
+            'https://home.by.me/es/project/cesiavm17-1799/cafe-de-mots',
+            '_blank'
+        );
     });
 </script>
+<script>
+    // Obtén el elemento <b>
+    var menuLabel = document.getElementById("menu");
 
+    // Ruta al archivo PDF
+    var pdfPath = "/ver-pdf"; // La URL de la ruta de Laravel
 
+    // Abre el PDF en una nueva pestaña cuando se hace clic en el elemento <b>
+    menuLabel.addEventListener("click", function() {
+        window.open(pdfPath, '_blank');
+    });
+</script>
 
 </html>

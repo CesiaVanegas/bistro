@@ -117,6 +117,7 @@ class PostresController extends Controller
         }
 
         $postres->nombre = $request->input('nombre');
+        $postres->estado = $request->input('estado');
         $postres->precio = $request->input('precio');
         $postres->descripcion = $request->input('descripcion');
         $postres->save();

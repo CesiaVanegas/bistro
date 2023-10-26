@@ -31,3 +31,9 @@ Route::post('contacto/guardar', [App\Http\Controllers\ContactosController::class
 
 // retorno de imagenes de libros 
 Route::get('/libros_r', [App\Http\Controllers\BibliotecaController::class, 'LibrosRender'])->name('LibrosRender');
+
+Route::get('/ver-pdf', function () {
+    $pdfPath = public_path('img/menu_digital.pdf'); // Ruta al archivo PDF en la carpeta 'public/img'
+    return response()->file($pdfPath);
+});
+

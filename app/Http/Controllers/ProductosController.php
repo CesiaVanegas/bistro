@@ -86,6 +86,7 @@ class ProductosController extends Controller
 
         $producto->nombre = $request->input('nombre');
         $producto->precio = $request->input('precio');
+        $producto->estado = $request->input('estado');
         $producto->descripcion = $request->input('descripcion');
         $producto->save();
 
