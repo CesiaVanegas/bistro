@@ -792,9 +792,13 @@
 
     // Ruta al archivo PDF
     var pdfPath = "/ver-pdf"; // La URL de la ruta de Laravel
+    if (pdfPath) {
+        pdfPath = "/bistro/public/ver-pdf"; 
+    }
 
     // Abre el PDF en una nueva pestaña cuando se hace clic en el elemento <b>
     menuLabel.addEventListener("click", function() {
+        
         window.open(pdfPath, '_blank');
     });
 </script>
