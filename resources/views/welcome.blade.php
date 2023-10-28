@@ -701,7 +701,7 @@
                                 <a target="blank"
                                     href="https://www.facebook.com/profile.php?id=61552236770252&mibextid=2JQ9oc"
                                     class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a target="blank" href="https://instagram.com/lecafe.desmots?igshid=MzRlODBiNWFlZA=="
+                                <a target="blank" href="https://instagram.com/lecafedesmots_sv?igshid=YTQwZjQ0NmI0OA=="
                                     class="instagram"><i class="bx bxl-instagram"></i></a>
                                 {{-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> --}}
