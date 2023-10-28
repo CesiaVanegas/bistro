@@ -115,7 +115,7 @@
                             <i class='bx bx-coffee'></i>
                             <h4 class="fuente-titulos-s"><b>Visión</b></h4>
                             <p>Nuestra visión es convertirnos en un lugar emblemático y reconocido en la comunidad
-                                amante de la repostería y la cultura. Aspiramos a ser un punto de encuentro donde la
+                                amante de la repostería y la cultura francesa. Aspiramos a ser un punto de encuentro donde la
                                 gente pueda disfrutar de los placeres simples de la vida: desde un postre recién
                                 horneado y una taza de café, hasta la emoción de descubrir un nuevo mundo a través de
                                 las páginas de un libro.
