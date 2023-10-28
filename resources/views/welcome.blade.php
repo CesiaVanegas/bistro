@@ -150,6 +150,7 @@
                                     <p>Ofrecemos un ambiente acogedor para nuestros clientes, un lugar para disfrutar de
                                         nuestros productos <b id="preview">visualizar local</b></p>
                                 </a>
+
                             </li>
                             <li class="nav-item mt-2">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
@@ -286,8 +287,9 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Me parece un lugar bastante interesante para probar postres de una cultura diferente
-                                    y conocer de la literatura francesa.
+                                    Me encanta la temática lleva el local, cómo combina los elementos franceses, la
+                                    iluminación, los postres y la biblioteca. Todo es muy lindo ¡un lugar al que
+                                    regresaría definitivamente!
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-2.jpg') }}" class="testimonial-img"
@@ -303,7 +305,7 @@
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                     Un lugar muy innovador, donde las personas de todas las edades pueden ir y disfrutar
                                     de un postre y un buen libro, esto crea un hábito muy bueno para nuestra sociedad
-                                    actual.
+                                    actual
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-3.jpg') }}" class="testimonial-img"
@@ -318,7 +320,7 @@
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                     El local me parece muy lindo y amplio, el área de biblioteca es muy acogedora y el
-                                    servicio al cliente es muy bueno!!
+                                    servicio al cliente es muy bueno!! La pagina web me parece muy intuitiva para el consumidor 
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-4.jpg') }}" class="testimonial-img"
@@ -332,9 +334,8 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Me encanta la temática lleva el local, cómo combina los elementos franceses, la
-                                    iluminación, los postres y la biblioteca. Todo es muy lindo, un lugar al que
-                                    regresaría definitivamente!
+                                    Me parece un lugar bastante interesante para probar postres de una cultura diferente
+                                    y conocer de la literatura francesa
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="{{ asset('img/testimonials/testimonials-5.jpg') }}" class="testimonial-img"
