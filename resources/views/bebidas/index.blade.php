@@ -5,16 +5,17 @@
         <a href="{{ route('bebidas.create') }}" class="btn btn-primary mb-2"><i class="fa-solid fa-plus"></i> Agregar
             Bebidas</a>
 
-            <form action="{{ route('bebidas.index') }}" method="GET" class="mb-3">
-                <div class="input-group">
-                    <input type="text" name="search" class="form-control" placeholder="Buscar bebidas" value="{{ request('search') }}">
-                    <div class="input-group-append">
-                        <button type="submit" class="btn btn-primary">Buscar</button>
-                        <a href="{{ route('bebidas.index') }}" type="button" class="btn btn-secondary" >Limpiar</a>
-                    </div>
+        <form action="{{ route('bebidas.index') }}" method="GET" class="mb-3">
+            <div class="input-group">
+                <input type="text" name="search" class="form-control" placeholder="Buscar bebidas"
+                    value="{{ request('search') }}">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                    <a href="{{ route('bebidas.index') }}" type="button" class="btn btn-secondary">Limpiar</a>
                 </div>
-            </form>
-            
+            </div>
+        </form>
+
 
         <div class="table-responsive">
             <table class="table table-hover">
@@ -42,7 +43,13 @@
                                         style="max-width: 50px;">
                                 </div>
                             </td>
-                            <td>{{ $item['estado'] }}</td>
+                            <td>
+                                @if ($item['estado'] === 'Activo')
+                                    <span class="badge bg-success">Activo</span> 
+                                @else
+                                <span class="badge bg-secondary">Inactivo</span>
+                                @endif
+                            </td>
                             <td>
                                 <a href="{{ route('bebidas.edit', $item->id) }}" class="btn btn-primary"><i
                                         class="fa-solid fa-pen-to-square"></i></a>

@@ -6,6 +6,9 @@
     </div>
 
     <div class="container">
+        <div class="mb-3">
+            <input type="text" id="search" class="form-control" placeholder="Buscar...">
+        </div>
         <div class="table-responsive">
             <table class="table table-hover">
                 <thead class="table-dark">
@@ -46,7 +49,54 @@
                 </tbody>
             </table>
         </div>
+        <div class="custom-pagination">
+            <nav aria-label="Pagination Navigation">
+                <ul class="pagination">
+                    @if ($data->previousPageUrl())
+                        <li class="page-item">
+                            <a class="page-link" href="{{ $data->previousPageUrl() }}" rel="prev">&laquo; Anterior</a>
+                        </li>
+                    @endif
+
+                    @foreach ($data->getUrlRange(1, $data->lastPage()) as $page => $url)
+                        <li class="page-item{{ $page == $data->currentPage() ? ' active' : '' }}">
+                            <a class="page-link" href="{{ $url }}">{{ $page }}</a>
+                        </li>
+                    @endforeach
+
+                    @if ($data->nextPageUrl())
+                        <li class="page-item">
+                            <a class="page-link" href="{{ $data->nextPageUrl() }}" rel="next">Siguiente &raquo;</a>
+                        </li>
+                    @endif
+                </ul>
+            </nav>
+        </div>
         @include('contactos.modal')
     </div>
-
+    <script>
+        const searchInput = document.getElementById('search');
+        const table = document.querySelector('table');
+        const rows = table.querySelectorAll('tbody tr');
+    
+        searchInput.addEventListener('input', function () {
+            const searchText = this.value.toLowerCase();
+    
+            rows.forEach((row) => {
+                const cells = row.querySelectorAll('td');
+                let rowText = '';
+    
+                cells.forEach((cell) => {
+                    rowText += cell.textContent.toLowerCase();
+                });
+    
+                if (rowText.includes(searchText)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
 @endsection

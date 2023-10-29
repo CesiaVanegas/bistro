@@ -105,6 +105,11 @@
                                 <a class="nav-link text-white" href="{{ route('bebidas.index') }}">Bebidas</a>
                             </li>
                         @endauth
+                        @auth
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('contacto.index') }}">Notificaciones</a>
+                        </li>
+                    @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -113,27 +118,8 @@
                         @auth
                             <li class="nav-item dropdown">
                                 <div class="position-relative">
-                                    <a class="nav-link text-white" href="#" data-bs-toggle="dropdown">
-                                        <i class="fa fa-bell"></i>
-                                        <span
-                                            class="badge bg-danger badge-sm badge-pill position-absolute top-1 end-1 translate-middle"
-                                            style="font-size: 9px;">
-                                            3
-                                        </span>
-                                    </a>
-                                    <!-- Menú desplegable de notificaciones -->
-                                    <div class="dropdown-menu dropdown-menu-end">
-                                        <!-- Contenido del menú de notificaciones -->
-                                        <!-- Puedes agregar aquí el contenido de las notificaciones -->
-                                       
-                                        @if (isset($notificaciones))
-                                        @foreach ($notificaciones as $item)
-                                            <a class="dropdown-item" href="#"><i class="fa-regular fa-circle-check"></i> {{$item->contacto->nombre}}</a>
-                                            <hr>
-                                        @endforeach
-                                    @endif
-                   
-                                    </div>
+                                    @include('notificaciones.index')
+                                     
                                 </div>
                             </li>
                         @endauth

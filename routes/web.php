@@ -25,6 +25,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('bebidas', App\Http\Controllers\BeibidasController::class);
     Route::get('contacto', [App\Http\Controllers\ContactosController::class, 'index'])->name('contacto.index');
     Route::get('contacto/{id}', [App\Http\Controllers\ContactosController::class, 'show'])->name('contacto.show');
+    Route::get('/notificaciones', [App\Http\Controllers\NotificacionesController::class, 'index'])->name('notificaciones.index');
+    Route::get('/cambiarestado/{id}', [App\Http\Controllers\NotificacionesController::class, 'cambiarestado'])->name('cambiarestado');
 });
 
 Route::post('contacto/guardar', [App\Http\Controllers\ContactosController::class, 'store'])->name('contacto.store');

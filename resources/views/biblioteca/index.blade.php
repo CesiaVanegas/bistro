@@ -50,7 +50,13 @@
                                 </div>
 
                             </td>
-                            <td>{{ $item['estado'] }}</td>
+                            <td>
+                                @if ($item['estado'] === 'Activo')
+                                    <span class="badge bg-success">Activo</span>
+                                @else
+                                    <span class="badge bg-secondary">Inactivo</span>
+                                @endif
+                            </td>
 
                             <td>
                                 <a href="{{ route('biblioteca.edit', $item->id) }}" class="btn btn-primary"><i
