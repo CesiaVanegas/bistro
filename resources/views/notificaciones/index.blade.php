@@ -14,7 +14,7 @@
 <script>
     function cambiarEstado(id) {
         
-        fetch(`/cambiarestado/${id}`)
+        fetch(`http://192.168.1.59/bistro/public/cambiarestado/${id}`)
             .then(response => response.json())
             .then(data => {
                 
@@ -27,7 +27,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         const notificacionesContainer = document.getElementById('notificaciones-container');
         const numNotificacionElement = document.getElementById('num_notificacion');
-        fetch('/notificaciones')
+        fetch('http://192.168.1.59/bistro/public/notificaciones')
             .then(response => response.json())
             .then(data => {
                
@@ -35,7 +35,7 @@
 
                     const html = data.notificaciones.data.map((item, index) => {
                         const notificationHtml =
-                            `<a class="dropdown-item" onclick="cambiarEstado(${item.id})" href="${item.url != 'contacto/contacto' ? 'contacto' :item.url }"><i class="fa-regular fa-circle-check"></i> ${item.contacto.nombre}</a>`;
+                            `<a class="dropdown-item" onclick="cambiarEstado(${item.id})" href="${item.url != 'contacto/contacto' ? 'http://192.168.1.59/bistro/public/contacto' :item.url }"><i class="fa-regular fa-circle-check"></i> ${item.contacto.nombre}</a>`;
                         if (index < data.notificaciones.data.length - 1) {
                             return `${notificationHtml}<hr>`;
                         }
